@@ -44,7 +44,8 @@ ScrollTrigger.matchMedia({
       gsap.timeline({
         scrollTrigger: {
           trigger: ".sobre",
-          start: "20% 85%",
+          start: "10% 85%",
+          end: "100% 0%",
           toggleActions: "restart reverse restart reverse",
           markers: false,
         }
@@ -81,7 +82,8 @@ ScrollTrigger.matchMedia({
       gsap.timeline({
         scrollTrigger: {
           trigger: ".projetos",
-          start: "15% 85%",
+          start: "10% 85%",
+                    end: "100% 0%",
           toggleActions: "restart reverse restart reverse",
           markers: false,
         }
@@ -107,7 +109,8 @@ ScrollTrigger.matchMedia({
       gsap.timeline({
         scrollTrigger: {
           trigger: ".servicos",
-          start: "12% 85%",
+          start: "10% 85%",
+                    end: "100% 0%",
           toggleActions: "restart reverse restart reverse",
           markers: false,
         }
