@@ -20,6 +20,10 @@ body {
     background-color: #000016;
 }
 
+h1{
+    font-family: 'vamos', sans-serif;
+}
+
 .voltar {
     position: fixed;
     top: 10px;

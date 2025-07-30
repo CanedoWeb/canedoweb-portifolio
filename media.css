@@ -309,7 +309,6 @@
     }
 
     menu.menu-celular {
-                border: 2px green solid;
         padding: 5px 10px;
         position: fixed;
         top: 10px;
@@ -345,12 +344,10 @@
 
 
     header {
-                border: 2px yellow solid;
         height: auto;
     }
 
     header .hero-fundo {
-        border: 2px red solid;
         background-image: url('assets/img/Group\ 63\ \(1\).webp'), url('assets/img/quadriculado\ 1920\ top.webp');
         background-size: contain, contain;
         background-repeat: no-repeat, no-repeat;
