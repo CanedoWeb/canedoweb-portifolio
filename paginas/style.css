@@ -6,9 +6,9 @@
 
 @font-face {
     font-family: 'vamos';
-    src: url('assets/fonts/vamos/vamos.otf') format('woff2'),
-        url('assets/fonts/vamos/vamos.otf') format('woff'),
-        url('assets/fonts/vamos/vamos.otf') format('truetype');
+    src: url('../assets/fonts/vamos/vamos.otf') format('woff2'),
+        url('../assets/fonts/vamos/vamos.otf') format('woff'),
+        url('../assets/fonts/vamos/vamos.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
