@@ -281,7 +281,7 @@
         padding: 10px;
     }
 
-     .redes-link ul li a div {
+    .redes-link ul li a div {
         display: none;
     }
 
@@ -304,16 +304,28 @@
 
 /* Mobile */
 @media (max-width: 780px) {
-    .menu{
-        display: none;
-    }
-    .menu .navbar nav,
-    .menu .navbar .btn-contato {
+    menu.menu {
         display: none;
     }
 
     .hamburguer {
         display: flex;
+    }
+
+    .navbar-mobile {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.34);
+        backdrop-filter: blur(20px);
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+        z-index: 1000;
     }
 
     .logo h2 {
@@ -335,19 +347,6 @@
         background-size: contain, contain;
         background-repeat: no-repeat, no-repeat;
         background-position: top, bottom;
-    }
-
-    header .navbar {
-        width: 98%;
-        padding: 6px 8px;
-        border-radius: 24px;
-        margin: 0px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .navbar h2 {
-        font-size: 14px;
     }
 
     header .contato-btn {

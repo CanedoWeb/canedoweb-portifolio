@@ -63,6 +63,11 @@ h2 span {
     flex-direction: column;
 }
 
+
+.navbar-mobile {
+    display: none;
+}
+
 /* Ícone Hamburguer */
 .hamburguer {
     display: none;
