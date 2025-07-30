@@ -174,6 +174,8 @@ ScrollTrigger.matchMedia({
     animarCont();
   },
 
+
+
   // Quando a tela for menor ou igual a 780px
   "(max-width: 780px)": function() {
     gsap.registerPlugin(ScrollTrigger);
@@ -211,12 +213,12 @@ ScrollTrigger.matchMedia({
         ease: "power4.inOut"
     });
 
-    // SECTION SOBRE
+
     function animarSobreMobile() {
       gsap.timeline({
         scrollTrigger: {
           trigger: ".sobre",
-          start: "20% 85%",
+          start: "10% 85%",
           toggleActions: "restart reverse restart reverse",
           markers: false,
         }
@@ -253,7 +255,7 @@ ScrollTrigger.matchMedia({
       gsap.timeline({
         scrollTrigger: {
           trigger: ".projetos",
-          start: "15% 85%",
+          start: "10% 85%",
           toggleActions: "restart reverse restart reverse",
           markers: false,
         }
@@ -279,7 +281,7 @@ ScrollTrigger.matchMedia({
       gsap.timeline({
         scrollTrigger: {
           trigger: ".servicos",
-          start: "12% 85%",
+          start: "10% 85%",
           toggleActions: "restart reverse restart reverse",
           markers: false,
         }
