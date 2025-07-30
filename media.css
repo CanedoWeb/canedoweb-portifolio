@@ -306,7 +306,6 @@
 @media (max-width: 780px) {
     menu.menu {
         display: none;
-                border: 2px red solid;
     }
 
     .hamburguer {
