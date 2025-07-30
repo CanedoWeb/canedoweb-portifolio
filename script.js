@@ -54,7 +54,8 @@ ScrollTrigger.matchMedia({
         x: -200,
         opacity: 0,
         duration: 0.8,
-        ease: "power4.out"
+        ease: "power4.out",
+        delay: 2
       })
       .from(".meio", {
         scale: 0.5,
