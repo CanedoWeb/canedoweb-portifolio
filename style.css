@@ -86,6 +86,7 @@ h2 span {
 
 /* Menu Mobile */
 .menu-mobile {
+            border: 2px red solid;
     border-radius: 30px;
     border: #050C92 4px solid;
     position: fixed;
@@ -182,6 +183,7 @@ header .hero-fundo {
 
 /* MENU DESKTOP */
 menu.menu {
+            border: 2px red solid;
     padding: 5px 10px;
     position: fixed;
     top: 10px;
@@ -197,6 +199,7 @@ menu.menu {
 }
 
 .menu .navbar {
+            border: 2px red solid;
     width: 100%;
     display: flex;
     justify-content: space-between;

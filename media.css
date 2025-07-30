@@ -306,13 +306,16 @@
 @media (max-width: 780px) {
     menu.menu {
         display: none;
+                border: 2px red solid;
     }
 
     .hamburguer {
         display: flex;
+                border: 2px red solid;
     }
 
     .navbar-mobile {
+        border: 2px red solid;
         position: fixed;
         top: 10px;
         left: 50%;
@@ -333,6 +336,7 @@
     }
 
     .logo {
+                border: 2px red solid;
         padding: 0;
         margin: 0;
     }
