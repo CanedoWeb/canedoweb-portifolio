@@ -276,7 +276,15 @@
         padding: 80px 20px 40px 20px;
     }
 
-    
+    .redes-link ul li a {
+        width: auto;
+        padding: 10px;
+    }
+
+     .redes-link ul li a div {
+        display: none;
+    }
+
 
     .footer h2 {
         font-size: 70px;
