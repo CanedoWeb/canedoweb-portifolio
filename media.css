@@ -276,15 +276,14 @@
         padding: 80px 20px 40px 20px;
     }
 
-    .redes-link ul li a {
-        width: 150px;
-        padding: 10px;
-    }
-
 
     .redes-link ul li a {
         width: auto;
         padding: 10px;
+    }
+
+     .redes-link ul li a div {
+        display: none;
     }
 
 
