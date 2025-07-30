@@ -179,6 +179,7 @@ header .hero-fundo {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    padding: 0 20px;
 }
 
 /* MENU DESKTOP */
@@ -266,7 +267,7 @@ menu.menu {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 .hero-content h1 {
