@@ -303,8 +303,10 @@
 
 
 /* Mobile */
-@media (max-width: 400px) {
-
+@media (max-width: 780px) {
+    .menu{
+        display: none;
+    }
     .menu .navbar nav,
     .menu .navbar .btn-contato {
         display: none;
