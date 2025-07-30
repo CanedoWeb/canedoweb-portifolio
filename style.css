@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
-
 @font-face {
     font-family: 'vamos';
     src: url('assets/fonts/vamos/vamos.otf') format('woff2'),
@@ -19,10 +16,6 @@
 .burger {
     display: none;
 }
-
-
-
-
 
 html {
     scroll-behavior: smooth;
@@ -69,8 +62,6 @@ h2 span {
     display: flex;
     flex-direction: column;
 }
-
-
 
 /* Ícone Hamburguer */
 .hamburguer {

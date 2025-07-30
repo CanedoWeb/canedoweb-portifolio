@@ -45,7 +45,7 @@ function animarSobre() {
       trigger: ".sobre",
       start: "20% 85%",
       toggleActions: "restart reverse restart reverse",
-      markers: false,
+      markers: true,
     }
   })
   .from(".sobre-titulo", {
@@ -87,7 +87,7 @@ function animarPort() {
       trigger: ".projetos",
       start: "15% 85%",
       toggleActions: "restart reverse restart reverse",
-      markers: false,
+      markers: true,
     }
   })
   .from(".projetos-titulo", {
@@ -117,7 +117,7 @@ function animarServ() {
       trigger: ".servicos",
       start: "12% 85%",
       toggleActions: "restart reverse restart reverse",
-      markers: false,
+      markers: true,
     }
   })
   .from('.servicos-fundo', {
@@ -156,7 +156,7 @@ function animarCont() {
       trigger: ".contato",
       start: "30% 85%",
       toggleActions: "restart reverse restart reverse",
-      markers: false,
+      markers: true,
     }
   })
   .from(".contato-titulo", {
