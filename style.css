@@ -41,6 +41,7 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     background-color: #000016;
     overflow-x: hidden;
+    max-width: 1920px;
 }
 
 h1 {
