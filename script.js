@@ -35,7 +35,7 @@ ScrollTrigger.matchMedia({
     .from(".txt-hero", {
         scale: 20,
         opacity:0,
-        duration:1.5,
+        duration:0.8,
         ease: "power4.inOut"
     });
 
