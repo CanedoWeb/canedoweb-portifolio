@@ -281,6 +281,10 @@
         padding: 10px;
     }
 
+    .redes-link ul li a div {
+        display: none;
+    }
+
     .footer h2 {
         font-size: 70px;
     }
