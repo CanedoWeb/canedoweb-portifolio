@@ -324,7 +324,6 @@
 
     .hamburguer {
         display: flex;
-        border: 2px red solid;
     }
 
     .navbar-mobile {
@@ -339,7 +338,6 @@
     }
 
     .logo {
-        border: 2px red solid;
         padding: 0;
         margin: 0;
     }
