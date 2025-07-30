@@ -25,7 +25,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .btn:hover {
     transform: scale(1.05);
     background: rgb(135, 135, 135);
