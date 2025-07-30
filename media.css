@@ -1,0 +1,641 @@
+/* Desktop */
+@media (min-width: 1058px) and (max-width: 1500px) {
+
+    header .hero-fundo {
+        background-image: url('assets/img/Group\ 63\ \(1\).webp'), url('assets/img/quadriculado\ 1920\ top.webp');
+        background-size: cover, contain;
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, bottom;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+        margin-bottom: 100px;
+    }
+
+    .hero-content h1 span {
+        font-size: 45px;
+    }
+
+    .sobre {
+        height: auto;
+        padding: 200px 100px 120px 100px;
+    }
+
+    .sobre-meio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-meio>div {
+        width: 100%;
+    }
+
+    .sobre-meio .esquerda {
+        order: 3;
+    }
+
+    .sobre-meio .meio {
+        order: 1;
+    }
+
+    .sobre-meio .direita {
+        order: 2;
+    }
+
+    .sobre-meio .esquerda h3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'vamos', sans-serif;
+        text-align: center;
+        color: #eee;
+        font-size: 16px;
+    }
+
+    .sobre-meio .direita {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .projetos-fundo {
+        padding: 200px 100px 190px 100px;
+        background: radial-gradient(circle 600px at center, rgba(1, 6, 98, 0.55) 50%, #000016 100%);
+    }
+
+    .projetos-titulo h2 span {
+        margin-left: 20%;
+    }
+
+    .projeto-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .servicos-titulo h2 {
+        margin-left: 0%;
+        white-space: wrap;
+    }
+
+    .servicos-titulo h2 span {
+        margin-left: 0%;
+        white-space: wrap;
+    }
+
+    .contato .contato-fundo h2 {
+        font-size: 26px;
+    }
+
+    .redes-link ul li a {
+        width: 200px;
+    }
+
+    .footer h2 {
+        font-size: 110px;
+    }
+
+    .footer p.um {
+        font-size: 30px;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 781px) and (max-width: 1057px) {
+    header {
+        height: 100vh;
+    }
+
+    header .hero-fundo {
+        background-image: url('assets/img/Group\ 63\ \(1\).webp'), url('assets/img/quadriculado\ 1920\ top.webp');
+        background-size: cover, contain;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
+    }
+
+    .menu .navbar .logo h2 {
+        font-size: 1.6vw;
+    }
+
+
+    .menu .navbar .nav ul {
+        gap: 50px;
+    }
+
+
+    .hero-content {
+        margin-bottom: 40px;
+    }
+
+    header .hero-content h1 {
+        font-size: 36px;
+        margin-bottom: 80px;
+    }
+
+    header .hero-content h1 span {
+        font-size: 32px;
+    }
+
+    .sobre {
+        padding: 200px 50px 100px 50px;
+    }
+
+    .sobre h2 {
+        font-size: 24px;
+    }
+
+    .sobre-meio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-meio>div {
+        width: 90%;
+    }
+
+    .sobre-meio .esquerda {
+        order: 3;
+    }
+
+    .sobre-meio .meio {
+        order: 1;
+    }
+
+    .sobre-meio .direita {
+        order: 2;
+    }
+
+    .sobre-meio .direita p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #e8e6e6e8;
+        padding-bottom: 20px;
+    }
+
+    .projetos h2 {
+        font-size: 24px;
+    }
+
+    .projetos-titulo h2 span {
+        margin-left: 10%;
+    }
+
+    .projetos-fundo {
+        background: radial-gradient(circle 400px at center, rgba(1, 6, 98, 0.55) 50%, #000016 100%);
+        padding: 150px 50px 210px 50px;
+    }
+
+    .projeto-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section.servicos {
+        padding: 0px 50px 100px 50px;
+    }
+
+    .servicos-fundo {
+        height: auto;
+        gap: 40px;
+    }
+
+    .servicos h2 {
+        font-size: 24px;
+    }
+
+    .servicos-titulo h2 span {
+        display: block;
+        white-space: wrap;
+        margin-left: 10%;
+    }
+
+    .servico-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .servico-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .servico-card h3 {
+        font-size: 10px;
+    }
+
+    .servico-card span {
+        font-size: 10px;
+    }
+
+    .contato .contato-fundo {
+        padding: 200px 20px 60px 20px;
+    }
+
+    .contato .contato-fundo h2 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contato-botoes ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .contato .contato-btn {
+        width: 200px;
+        height: 60px;
+    }
+
+    .contato .contato-btn span {
+        font-size: 10px;
+    }
+
+    section.contato .contato-btn img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contato-link ul {
+        gap: 20px;
+    }
+
+    .redes-link {
+        padding: 80px 20px 40px 20px;
+    }
+
+    .redes-link ul li a {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .footer h2 {
+        font-size: 70px;
+    }
+
+    .footer-txt p.um {
+        font-size: 30px;
+    }
+
+    .footer-txt p {
+        font-size: 10px;
+    }
+}
+
+
+
+
+/* Mobile */
+@media (max-width: 780px) {
+
+    .menu .navbar nav,
+    .menu .navbar .btn-contato {
+        display: none;
+    }
+
+    .hamburguer {
+        display: flex;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+
+    .menu {
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        z-index: 99999;
+    }
+
+    .logo {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    header {
+        height: auto;
+    }
+
+    header .hero-fundo {
+        background-image: url('assets/img/Group\ 63\ \(1\).webp'), url('assets/img/quadriculado\ 1920\ top.webp');
+        background-size: contain, contain;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, bottom;
+    }
+
+    header .navbar {
+        width: 98%;
+        padding: 6px 8px;
+        border-radius: 24px;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar h2 {
+        font-size: 14px;
+    }
+
+    header .contato-btn {
+        padding: 2px 6px;
+    }
+
+    header .contato-btn span {
+        font-size: 10px;
+        gap: 4px;
+    }
+
+    header .btn img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .hero-content {
+        margin-top: 150px;
+        margin-bottom: 40px;
+        padding: 0 8px;
+    }
+
+    header .hero-content h1 {
+        font-size: 5vw;
+        margin-bottom: 40px;
+        letter-spacing: 0;
+    }
+
+    header .hero-content h1 span {
+        font-size: 4vw;
+    }
+
+    header .hero-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .sobre {
+        padding: 100px 10px 50px 10px;
+        border: red solid 2px;
+        height: auto;
+    }
+
+    .sobre h2 {
+        font-size: 24px;
+    }
+
+    .sobre-meio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sobre-meio .esquerda h3 {
+        font-size: 14px;
+    }
+
+    .sobre-meio .esquerda div svg {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .sobre-meio>div {
+        width: 100%;
+    }
+
+    .sobre-meio .meio img {
+        height: auto;
+        width: 300px;
+    }
+
+    .sobre-meio .esquerda {
+        order: 3;
+    }
+
+    .sobre-meio .meio {
+        order: 1;
+    }
+
+    .sobre-meio .direita {
+        order: 2;
+    }
+
+    .sobre-meio .direita p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #e8e6e6e8;
+        padding-bottom: 20px;
+    }
+
+    .projetos {
+        border: 2px solid green;
+    }
+
+    .projetos-fundo {
+        background: radial-gradient(circle 300px at center, rgba(1, 6, 98, 0.55) 50%, #000016 100%);
+        padding: 100px 10px 150px 10px;
+    }
+
+    .projetos h2 {
+        font-size: 24px;
+
+    }
+
+    .projetos-titulo h2 span {
+        display: block;
+        margin-left: 0;
+        font-size: 20px;
+        white-space: wrap;
+        margin-bottom: 40px;
+    }
+
+    .projetos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 3 colunas de mesmo tamanho */
+        gap: 20px;
+        /* espaçamento entre as imagens */
+        padding: 10px;
+    }
+
+    .projeto-card img {
+        width: 100%;
+        height: 100%;
+        border: 2px solid #010AA8;
+        ;
+    }
+
+    section.servicos {
+        padding: 0px 00px 00px 00px;
+    }
+
+    .servicos h2 {
+        font-size: 24px;
+
+    }
+
+    .servicos-titulo h2 span {
+        display: block;
+        margin-left: 0;
+        font-size: 18px;
+        white-space: wrap;
+        margin-bottom: 40px;
+    }
+
+    .servicos-fundo {
+        height: auto;
+        padding: 50px 10px 150px 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .servicos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3vw;
+    }
+
+    .servico-card {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .servico-card img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .servico-card h3 {
+        font-size: 9px;
+    }
+
+    .servico-card span {
+        font-size: 10px;
+    }
+
+    .contato .contato-fundo h2 {
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .contato .contato-fundo {
+        padding: 200px 20px 60px 20px;
+    }
+
+    .contato .contato-fundo h2 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contato-botoes ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .contato .contato-btn {
+        width: 200px;
+        height: 60px;
+    }
+
+    .contato .contato-btn span {
+        font-size: 10px;
+    }
+
+    section.contato .contato-btn img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contato-link ul {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .zap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato-link ul li a {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato-link ul li a p {
+        text-align: center;
+    }
+
+    .redes-link {
+        padding: 80px 10px 40px 10px;
+    }
+
+    .redes-link ul li a {
+        width: auto;
+        padding: 10px;
+    }
+
+    .redes-link ul li a div {
+        display: none;
+    }
+
+
+    footer {
+        position: sticky;
+        bottom: 0;
+    }
+
+    .container-bolado {
+        background-color: #000016;
+        position: relative;
+        z-index: 2;
+    }
+
+    .footer h2 {
+        font-size: 10vw;
+    }
+
+    .footer-txt p.um {
+        font-size: 6vw;
+    }
+
+    .footer-txt p {
+        font-size: 10px;
+    }
+}
