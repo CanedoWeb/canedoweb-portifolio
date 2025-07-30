@@ -395,7 +395,6 @@
 
     .sobre {
         padding: 100px 10px 50px 10px;
-        border: red solid 2px;
         height: auto;
     }
 
@@ -449,9 +448,6 @@
         padding-bottom: 20px;
     }
 
-    .projetos {
-        border: 2px solid green;
-    }
 
     .projetos-fundo {
         background: radial-gradient(circle 300px at center, rgba(1, 6, 98, 0.55) 50%, #000016 100%);
@@ -483,8 +479,6 @@
     .projeto-card img {
         width: 100%;
         height: 100%;
-        border: 2px solid #010AA8;
-        ;
     }
 
     section.servicos {
