@@ -169,6 +169,7 @@ header {
 
 
 header .hero-fundo {
+    position: relative;
     background-image: url('assets/img/Group\ 63\ \(1\).webp'), url('assets/img/quadriculado\ 1920\ top.webp');
     background-size: cover, contain;
     background-repeat: no-repeat, no-repeat;
