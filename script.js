@@ -43,7 +43,7 @@ function animarSobre() {
   gsap.timeline({
     scrollTrigger: {
       trigger: ".sobre",
-      start: "30% 85%",
+      start: "20% 85%",
       toggleActions: "restart reverse restart reverse",
       markers: false,
     }
