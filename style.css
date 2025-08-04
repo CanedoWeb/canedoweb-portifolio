@@ -642,7 +642,7 @@ section.contato {
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.10);
 }
 
-section.contato .contato-btn:hover {
+.contato-botoes .contato-btn:hover {
     transform: scale(1.05);
     background: rgb(135, 135, 135);
     transition: 0.2s;
