@@ -2,10 +2,10 @@
 @media (min-width: 1058px) and (max-width: 1500px) {
 
     header .hero-fundo {
-        background-image: url('assets/img/Group\ 63\ \(1\).webp'), url('assets/img/quadriculado\ 1920\ top.webp');
-        background-size: cover, contain;
-        background-repeat: no-repeat, no-repeat;
-        background-position: center, bottom;
+        background-image: url('assets/img/discotop.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         width: 100%;
         height: 100%;
         display: flex;
@@ -67,7 +67,7 @@
 
     .projetos-fundo {
         padding: 200px 100px 190px 100px;
-        background: radial-gradient(circle 600px at center, rgba(1, 6, 98, 0.55) 50%, #000016 100%);
+        background: radial-gradient(circle 600px at center, #AD0485(1, 6, 98, 0.55) 20%, #161616 100%);
     }
 
     .projetos-titulo h2 span {
@@ -114,10 +114,10 @@
     }
 
     header .hero-fundo {
-        background-image: url('assets/img/Group\ 63\ \(1\).webp'), url('assets/img/quadriculado\ 1920\ top.webp');
-        background-size: cover, contain;
-        background-repeat: no-repeat, no-repeat;
-        background-position: top, bottom;
+        background-image: url('assets/img/discotop.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
     }
 
     .menu .navbar .logo h2 {
@@ -191,7 +191,7 @@
     }
 
     .projetos-fundo {
-        background: radial-gradient(circle 400px at center, rgba(1, 6, 98, 0.55) 50%, #000016 100%);
+        background: radial-gradient(circle 400px at center, #AD0485 20%, #161616 100%);
         padding: 150px 50px 210px 50px;
     }
 
@@ -349,10 +349,10 @@
     }
 
     header .hero-fundo {
-        background-image: url('assets/img/Group\ 63\ \(1\).webp'), url('assets/img/quadriculado\ 1920\ top.webp');
-        background-size: contain, contain;
-        background-repeat: no-repeat, no-repeat;
-        background-position: top, bottom;
+        background-image: url('assets/img/discotop.webp');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
     }
 
     header .contato-btn {
@@ -454,7 +454,7 @@
 
 
     .projetos-fundo {
-        background: radial-gradient(circle 300px at center, rgba(1, 6, 98, 0.55) 50%, #000016 100%);
+        background: radial-gradient(circle 300px at center, #AD0485 20%, #161616 100%);
         padding: 100px 10px 150px 10px;
     }
 
@@ -621,7 +621,7 @@
     }
 
     .container-bolado {
-        background-color: #000016;
+        background-color: #161616;
         position: relative;
         z-index: 2;
     }
