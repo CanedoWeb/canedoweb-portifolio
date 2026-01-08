@@ -13,6 +13,11 @@
     font-style: normal;
 }
 
+.demo{
+    color: #f9f9f9;
+    font-size: 14px;
+}
+
 .burger {
     display: none;
 }

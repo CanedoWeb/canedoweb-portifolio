@@ -1,3 +1,4 @@
+
 ScrollTrigger.matchMedia({
 
   // Quando a tela for maior que 780px
