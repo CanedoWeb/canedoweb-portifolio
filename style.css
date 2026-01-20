@@ -5,6 +5,7 @@
     cursor: none;
 }
 
+
 .circle {
     height: 14px;
     width: 14px;
@@ -14,8 +15,7 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999;
-    /* so that it stays on top of all other elements */
+    z-index: 999;
 }
 
 @font-face {
