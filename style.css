@@ -6,10 +6,10 @@
 }
 
 .circle {
-    height:14px;
+    height: 14px;
     width: 14px;
     border-radius: 24px;
-    background: radial-gradient( #555555 60%, #ffffff 50%) ;
+    background: radial-gradient(#555555 60%, #ffffff 50%);
     position: fixed;
     top: 0;
     left: 0;
@@ -20,9 +20,9 @@
 
 @font-face {
     font-family: 'clash';
-    src: url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Semibold.otf') format('woff2'),
-        url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Semibold.otf') format('woff'),
-        url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Semibold.otf') format('truetype');
+    src: url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Regular.otf') format('woff2'),
+        url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Regular.otf') format('woff'),
+        url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Regular.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,11 +34,6 @@
 
 .burger {
     display: none;
-}
-
-html,
-body {
-    overflow-x: hidden;
 }
 
 html {
@@ -71,16 +66,16 @@ body {
 
 h1 {
     font-family: 'clash', sans-serif;
-    background: linear-gradient(to bottom,#ffffff 15%, #b3b0b3 80%);
+    background: linear-gradient(to bottom, #ffffff 15%, #b3b0b3 80%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    font-size:80px;
+    font-size: 80px;
     font-family: 'clash', sans-serif;
-    background: linear-gradient(to right, #b3b0b3 0%, #ffffff 50% , #c3c0c3 100%);
+    background: linear-gradient(to right, #b3b0b3 0%, #ffffff 50%, #c3c0c3 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -301,7 +296,7 @@ menu.menu {
 
 .hero-content h1 {
     font-family: 'clash', sans-serif;
-    font-size: 130px;
+    font-size: 140px;
     letter-spacing: 0.1em;
     margin-bottom: 100px;
 }
@@ -432,16 +427,29 @@ section.projetos {
 
 /*ETAPAS*/
 
-
+.servicos {
+    height: 100vh;
+    background-color: white;
+}
 
 /*FOOTER*/
 
+.div-pai {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    perspective: 3000px;
+    perspective-origin: 50% 40%;
+}
+
 section.contato {
+    transform: rotateX(90deg) scaleX(.5);
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
+    z-index: 99;
 }
 
 .contato .contato-fundo {
@@ -455,7 +463,7 @@ section.contato {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0px 200px 0px;
+    padding: 100px 0px 00px 0px;
     position: relative;
 }
 
@@ -465,7 +473,7 @@ section.contato {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(to bottom, #161616 0%, rgba(0, 0, 0, 0.136) 30%, rgba(0, 0, 0, 0.8) 100%);
     z-index: 1;
 }
 
@@ -534,44 +542,6 @@ section.contato .contato-btn img {
     height: 60px;
 }
 
-.contato-link ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-}
-
-.contato-link ul li {
-    width: 300px;
-}
-
-.contato-link ul li a {
-    text-decoration: none;
-}
-
-
-.contatos-btn {
-    color: #e8e6e6e8;
-    ;
-}
-
-.contatos-btn:hover {
-    transform: scale(1.05);
-    transition: 0.2s;
-    color: rgb(135, 135, 135);
-}
-
-
-
-.contatos-btn img,
-svg {
-    height: 20px;
-    width: 20px;
-}
 
 .redes-link {
     width: 100%;
@@ -615,34 +585,9 @@ svg {
 }
 
 
-footer{
-    background: #161616;
-}
-
-footer .footer-container {
-    width: 100%;
-    height: auto;
-    background: #161616;
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    padding: 80px 0px;
-
-}
-
-footer .footer-container h3 {
-    font-size: 150px;
-    color: #121212;
+h3.txt-footer {
     font-size: 200px;
+    color: #00000051;
+    display: flex;
+    flex-wrap: nowrap;
 }
-
-.footer-txt p {
-    color: #000000;
-    font-size: 12px;
-}
-
-.footer-txt p.um {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
