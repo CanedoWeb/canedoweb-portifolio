@@ -13,6 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="assets/img/img-eu.webp" type="image/webp">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <script src="https://unpkg.com/kursor"></script>
 </head>
 
 <body>
@@ -20,61 +22,45 @@
     <div class="container-bolado">
         <header class="hero" id="home">
             <div class="hero-fundo">
-                <menu class="menu">
-                    <div class="navbar">
-                        <nav class="nav">
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#sobre">O Estúdio</a></li>
-                                <li><a href="#projetos">Projetos</a></li>
-                                <li><a href="#servicos">Serviços</a></li>
-                                <li><a href="#servicos">Contato</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </menu>
 
-                <menu class="menu-celular">
-                    <div class="navbar-mobile">
-                        <div class="logo">
-                            <h2>Canedo</h2>
-                        </div>
-                        <div class="hamburguer" id="btn-abrir">
-                            <span></span>
+                <div class="header">
+
+                    <div class="header-esq">
+                        <div class="logo"><a href="#home">Flowpixel Studio</a></div>
+                    </div>
+
+                    <div class="header-dir">
+                        <div class="hamburguer">
                             <span></span>
                             <span></span>
                         </div>
                     </div>
-                    <div class="menu-mobile" id="menu-mobile">
-                        <div class="fechar" id="btn-fechar"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                width="64" height="64" viewBox="0 0 72 72" style="fill:#FFFFFF;">
-                                <path
-                                    d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z">
-                                </path>
-                            </svg></div>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#servicos">Serviços</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ul>
-                    </div>
-                </menu>
-
-                <div class="overlay" id="overlay" onclick="fecharMenu()"></div>
+                </div>
 
                 <div class="hero-content">
                     <div class="txt-hero">
-                        <h1 class="txt-hero">PrimePixel Studio</h1>
+                        <p class="heroP hero-txt">Nosso foco é conversão e presença digital pra sua empresa </p>
+                        <a href="" class="btn btn-port hero-btn"><span>Ver Projetos</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAApklEQVR4nO3YsQ1CMQyEYcMCIGjZX0xAgxiA4gEFHSv4LskEQZHYgOLF1n1SBvgLJ1bMRERERERmRPJM8kJyZ5EBWEh2kvfQMe5+AvAZMSOq1nqwqDxxzEMxs8a01o4WVeaYp2LSxvTeNwBev1d4tQNgKaXs/wnZjsELH7IWzzAnnuEadkVMIsW+5RnWeVfEJFJEDCTfKT4fANxIXkNHiIiIiIiF8wVo5ml5T/IvBAAAAABJRU5ErkJggg=="
+                                alt="right--v1"></a>
+                        <a href="" class="btn hero-btn"></span>Contato</span><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0UlEQVR4nO1WW4hNYRTeLpNyLyIluRRGyJMHiVxKvLrGyIMmDx6Qy0h5kvAg84pkHjUiMiTNAylyeUVMPKjTuez1ff85Z5CZmF8ra0+705mz957xouar3Tnt/a+1vrX+dQuCUYwiA0ql0hwAh0h2kfxAskryO4Aekk+cc0edcwuCf41KpTKD5EUAP0n6Rg+A3yQ7y+Xywn9i3Dm3EYBEygE8EJGDAJZXq9WZJKeJSDPJfWoYQL+R+SYi20dknOT+SCGAbpIrkmTK5fIiAHdMZgDAieEaXw+gz7y55L0fm0UewEmL2EDmSDjnpgMomvHLWcnHSUTXQXJeakGSF0zwufd+nL7TX1N4Jks0ANy16+hIJRCG4RQrLQ3d6hips7FM35aWgOVEP4Bfzrn5aRjviryPvyeZj5VbV1oCJttpckfSEOgwLwez13s/pqYH/PDej89AoMXkHqch8EwPO+c21Sh5GREQkWNBBlifUKd60hD4ZEaaa97vjuXAlqxVFVVDGgKf9XAYhkvqfLtnir6KyNyMrVzlKomHSb6yK9hQ+01EptoQUmXv4iT1P8nTaqyOzpUm8z4NgesW5rYGZfXFFGq5tpVKpcXR1ZHstc45mKQAWk3n/UQCAPaYotcJY/lto4mo/STm1EN735pIIJ/PTyJZNmXrhjrnvW9S76NJWfPcjs4551bZTOgrFAqzEwkoAJyLJmCQAO/9BBHZQfIqyVskD0Tht/b91HS1B2kB4FSm/j0EdJCZnlB3hywEui2Ue4djWD3XDcqM99erqCGRy+UmatvVe+vt7Z0VhuFSkocB3GyUEzHya6KuaftESyb2ALbGhHN1MvyN1ruuakpORJaJyGZNSJIvYmcLJNdmMq4AcKXGYGi7XjsAl7SUWm84r00rGA74txM+AnBcSyi+fGiJAthJ8pp6a237ow2wG1oNxWJxcjASeO+bRqRgFP8b/gCoygrz5u75cAAAAABJRU5ErkJggg=="
+                                alt="whatsapp--v1"></a>
+                        <h1 class="heroH1 hero-txt">Experiências digitais que elevam marcas</h1>
                     </div>
-                    <!--<a href="#projetos" class="ver-projetos-btn btn btn-proj" id="ver-projetos-btn">
-                        <span class="mensagem-texto">Ver Projetos <img width="50" height="50"
-                                src="https://img.icons8.com/ios-filled/50/circled-right-2.png"
-                                alt="circled-right-2" /></span>
-                    </a>-->
                 </div>
             </div>
         </header>
+
+        <!-- Menu Slide da Direita -->
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li>Olá</li>
+                <li><a href="" class="btn menu-btn"></span>Contato</span><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0UlEQVR4nO1WW4hNYRTeLpNyLyIluRRGyJMHiVxKvLrGyIMmDx6Qy0h5kvAg84pkHjUiMiTNAylyeUVMPKjTuez1ff85Z5CZmF8ra0+705mz957xouar3Tnt/a+1vrX+dQuCUYwiA0ql0hwAh0h2kfxAskryO4Aekk+cc0edcwuCf41KpTKD5EUAP0n6Rg+A3yQ7y+Xywn9i3Dm3EYBEygE8EJGDAJZXq9WZJKeJSDPJfWoYQL+R+SYi20dknOT+SCGAbpIrkmTK5fIiAHdMZgDAieEaXw+gz7y55L0fm0UewEmL2EDmSDjnpgMomvHLWcnHSUTXQXJeakGSF0zwufd+nL7TX1N4Jks0ANy16+hIJRCG4RQrLQ3d6hips7FM35aWgOVEP4Bfzrn5aRjviryPvyeZj5VbV1oCJttpckfSEOgwLwez13s/pqYH/PDej89AoMXkHqch8EwPO+c21Sh5GREQkWNBBlifUKd60hD4ZEaaa97vjuXAlqxVFVVDGgKf9XAYhkvqfLtnir6KyNyMrVzlKomHSb6yK9hQ+01EptoQUmXv4iT1P8nTaqyOzpUm8z4NgesW5rYGZfXFFGq5tpVKpcXR1ZHstc45mKQAWk3n/UQCAPaYotcJY/lto4mo/STm1EN735pIIJ/PTyJZNmXrhjrnvW9S76NJWfPcjs4551bZTOgrFAqzEwkoAJyLJmCQAO/9BBHZQfIqyVskD0Tht/b91HS1B2kB4FSm/j0EdJCZnlB3hywEui2Ue4djWD3XDcqM99erqCGRy+UmatvVe+vt7Z0VhuFSkocB3GyUEzHya6KuaftESyb2ALbGhHN1MvyN1ruuakpORJaJyGZNSJIvYmcLJNdmMq4AcKXGYGi7XjsAl7SUWm84r00rGA74txM+AnBcSyi+fGiJAthJ8pp6a237ow2wG1oNxWJxcjASeO+bRqRgFP8b/gCoygrz5u75cAAAAABJRU5ErkJggg=="
+                            alt="whatsapp--v1"></a></li>
+            </ul>
+        </nav>
 
         <main class="main">
             <section id="sobre" class="sobre">
@@ -101,7 +87,7 @@
             <section id="projetos" class="projetos">
                 <div class="projetos-fundo fundo">
                     <div class="projetos-titulo">
-                        <h2>Portfólio</h2>
+                        <h2>portfólio</h2>
                     </div>
                     <div class="projetos-box">
                         <div class="projetos-grid">
@@ -131,18 +117,18 @@
                 </div>
             </section>
 
+
             <div class="div-pai">
                 <section id="servicos" class="servicos">
                     <div class="servicos-fundo fundo">
                         <div class="servicos-titulo">
-                            <h2>São 6 etapas</h2>
+                            <h2>etapas</h2>
                         </div>
                     </div>
                 </section>
 
                 <section id="contato" class="contato">
                     <div class="contato-fundo fundo">
-                        <div class="contato-overlay"></div>
                         <h2 class="contato-titulo">vamos trabalhar juntos</h2>
                         <div class="contato-botoes">
                             <ul>
@@ -157,24 +143,24 @@
                         <div class="redes-link">
                             <ul>
                                 <li><a href="https://www.instagram.com/canedo.web/" class="mensagem-btn" target="_blank"
-                                        rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48"
-                                            height="48" viewBox="0 0 48 48" style="fill:#FFFFFF;">
+                                        rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="48" height="48" viewBox="0 0 48 48" style="fill:#FFFFFF;">
                                             <path
                                                 d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z">
                                             </path>
                                         </svg>
                                     </a>
                                 <li><a href="https://www.instagram.com/canedo.web/" class="mensagem-btn" target="_blank"
-                                        rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48"
-                                            height="48" viewBox="0 0 48 48" style="fill:#FFFFFF;">
+                                        rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="48" height="48" viewBox="0 0 48 48" style="fill:#FFFFFF;">
                                             <path
                                                 d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z">
                                             </path>
                                         </svg>
                                     </a>
                                 <li><a href="https://www.instagram.com/canedo.web/" class="mensagem-btn" target="_blank"
-                                        rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48"
-                                            height="48" viewBox="0 0 48 48" style="fill:#FFFFFF;">
+                                        rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                            width="48" height="48" viewBox="0 0 48 48" style="fill:#FFFFFF;">
                                             <path
                                                 d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z">
                                             </path>
@@ -182,126 +168,23 @@
                                     </a>
                             </ul>
                         </div>
-                        <h3 class="txt-footer">ixelprime St</h3>
                     </div>
                 </section>
             </div>
         </main>
     </div>
 
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-
     <script>
-const coords = { x: 0, y: 0 };
-        const circles = document.querySelectorAll(".circle");
-
-        circles.forEach(function (circle, index) {
-            circle.x = 0;
-            circle.y = 0;
-        });
-
-        window.addEventListener("mousemove", function (e) {
-            coords.x = e.clientX;
-            coords.y = e.clientY;
-
-        });
-
-        function animateCircles() {
-
-            let x = coords.x;
-            let y = coords.y;
-
-            circles.forEach(function (circle, index) {
-                circle.style.left = x - 12 + "px";
-                circle.style.top = y - 12 + "px";
-
-                circle.style.scale = (circles.length - index) / circles.length;
-
-                circle.x = x;
-                circle.y = y;
-
-                const nextCircle = circles[index + 1] || circles[0];
-                x += (nextCircle.x - x) * 0.25;
-                y += (nextCircle.y - y) * 0.25;
-            });
-
-            requestAnimationFrame(animateCircles);
-        }
-
-        animateCircles();
-
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        };
-
-        let servBox = document.getElementById('servicos-box')
-        let btnProj = document.getElementById('ver-projetos-btn')
-        let btnAbrir = document.getElementById('btn-abrir')
-        let btnFechar = document.getElementById('btn-fechar')
-        let menu = document.getElementById('menu-mobile')
-        let overlay = document.getElementById('overlay')
-        let links = document.querySelectorAll('#menu-mobile a')
-
-        btnAbrir.addEventListener('click', () => {
-            menu.classList.add('abrir')
-            overlay.classList.add('ativo')
-            btnAbrir.style.display = 'none' // esconde o botão ao abrir
+        new kursor({
+            type: 1,
+            color: 'rgb(170, 170, 170)',
+            removeDefaultCursor: true,
         })
-
-        btnFechar.addEventListener('click', () => {
-            menu.classList.remove('abrir')
-            overlay.classList.remove('ativo')
-            btnAbrir.style.display = 'flex' // mostra o botão ao fechar
-        })
-
-        overlay.addEventListener('click', () => {
-            menu.classList.remove('abrir')
-            overlay.classList.remove('ativo')
-            btnAbrir.style.display = 'flex' // mostra o botão ao clicar fora
-        })
-
-        links.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('abrir')
-                overlay.classList.remove('ativo')
-                btnAbrir.style.display = 'flex'
-            })
-        })
-
-
-
-
-
-</script>
-
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
-    <script src="gsap.js"></script>
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script defer src="gsap.js"></script>
 </body>
 
 </html>
