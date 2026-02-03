@@ -128,18 +128,70 @@ document.addEventListener("DOMContentLoaded", (event) => {
       })
         .from(".servicos-titulo", { x: -100, opacity: 0 })
 
-      //SECTION CONTATO
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".div-pai",
-          start: "top top",
-          end: "+=500",
-          scrub: 0.5,
-          pin: true,
-          markers: false,
-        }
-      })
-        .fromTo(
+      // PIN SECTION - METODO FLOW
+      const list = document.querySelector(".list");
+        const fill = document.querySelector(".fill");
+        const listItems = gsap.utils.toArray("li", list);
+        const slides = gsap.utils.toArray(".slide");
+
+        const tl2 = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".div-pai",
+            start: "top top",
+            end: "+=" + listItems.length * 90 + "%",
+            pin: true,
+            scrub: true
+          }
+        });
+
+        // First element visible, set the marker
+        fill &&
+          gsap.set(fill, {
+            scaleY: 1 / listItems.length,
+            transformOrigin: "top left"
+          });
+
+
+        listItems.forEach((item, i) => {
+          const previousItem = listItems[i - 1];
+          if (previousItem) {
+            tl2.set(item, { color: "#c20c97", oppacity: 1}, 0.5 * i)
+              .to(
+                slides[i],
+                {
+                  autoAlpha: 1,
+                  duration: 0.6,
+                },
+                "<"
+              )
+              .set(previousItem, { color: "#eee",opacity: 1 }, "<")
+              .to(
+                slides[i - 1],
+                {
+                  autoAlpha: 0,
+                  duration: 0.6,
+                },
+                "<"
+              );
+          } else {
+            gsap.set(item, { color: "#c20c97"});
+            gsap.set(slides[i], { autoAlpha: 1 });
+          }
+        });
+
+        tl2.to(
+          fill,
+          {
+            scaleY: 1,
+            transformOrigin: "top left",
+            ease: "none",
+            duration: tl2.duration()
+          },
+          0
+        ).to({}, {duration: 0.3});
+
+        //SECTION CONTATO
+        tl2.fromTo(
           ".contato",
           {
             rotateX: 90,
@@ -154,8 +206,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             opacity: 1,
             duration: 1
           }
-        );
-
+        );// add a small pause at the end of the timeline before it un-pins
     },
 
 
