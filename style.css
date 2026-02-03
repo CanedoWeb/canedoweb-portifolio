@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 @font-face {
@@ -33,6 +32,10 @@ body {
     background-color: #0f0f0f;
     overflow-x: hidden;
     max-width: 1920px;
+}
+
+.btn {
+    box-shadow: #0f0f0f30 0 1px 2px;
 }
 
 /* Typography */
@@ -113,7 +116,7 @@ div.header {
     height: 3px;
     width: 40px;
     background: white;
-    transition: transform 0.3s ease;
+    transition:  0.3s ease;
 }
 
 .header-dir .hamburguer span:nth-child(2) {
@@ -123,10 +126,12 @@ div.header {
 /* Animação do Hamburguer para X */
 .header-dir .hamburguer.active span:nth-child(1) {
     transform: rotate(45deg) translateY(11px);
+    background-color: #1a1a1a;
 }
 
 .header-dir .hamburguer.active span:nth-child(2) {
     transform: rotate(-45deg) translateY(-11px);
+    background-color: #1a1a1a;
 }
 
 /* Menu Slide da Direita */
@@ -138,7 +143,7 @@ div.header {
     opacity: 0;
     width: 25%;
     height: 100vh;
-    background-color: #0f0f0fe2;
+    background-color: #ded5dbe2;
     backdrop-filter: blur(10px);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
@@ -150,9 +155,11 @@ div.header {
     overflow-y: auto;
 }
 
-.nav-menu p {
+.nav-menu h3 {
+    font-family: "Zalando Sans Expanded";
+    font-weight: normal;
     margin: 60px 0;
-    color: #eee;
+    color: #1a1a1a;
     font-size: 80px;
 }
 
@@ -167,6 +174,20 @@ div.header {
 
 .nav-menu ul li {
     list-style: none;
+}
+
+.nav-menu ul li a {
+    color: #0f0f0f;
+    transition: 0.2s;
+    border-radius: 50px;
+}
+
+.nav-menu ul li a img {
+    color: #0f0f0f;
+}
+
+.menu-btn-second img {
+    transform: rotate(-45deg);
 }
 
 /* Header / Hero */
@@ -212,8 +233,8 @@ header .hero-fundo {
 
 /* Buttons (hero) */
 a.btn {
-    height: 50px;
-    width: 190px;
+    height: auto;
+    width: auto;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -221,12 +242,17 @@ a.btn {
     color: #eeeeee;
     border-radius: 30px;
     background-color: rgba(154, 154, 154, 0.212);
-    padding: 10px 15px;
+    padding: 15px 20px;
     font-size: 18px;
     white-space: nowrap;
     vertical-align: middle;
     text-align: center;
     margin: 10px;
+}
+
+a.btn:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
 }
 
 a.btn span {
@@ -246,6 +272,14 @@ a.btn-port img {
     rotate: -45deg;
 }
 
+.hero-content a.btn-port {
+    border: 1px solid #AD0485;
+    background: rgba(26, 26, 26, 0.34);
+    backdrop-filter: blur(23.5px);
+}
+
+
+
 a.btn-contato img {
     margin-left: 15px;
 }
@@ -253,6 +287,10 @@ a.btn-contato img {
 a.btn:hover {
     background-color: rgba(154, 154, 154, 0.312);
     transition: 0.2s;
+}
+
+.hero a.btn-port:hover {
+    background: rgba(0, 0, 0, 0.255);
 }
 
 button.button img {
@@ -416,11 +454,15 @@ section.contato {
 .contato-botoes ul {
     display: flex;
     flex-direction: row;
-    gap: 200px;
+    gap: 20px;
 }
 
 .contato-botoes ul li {
     list-style: none;
+}
+
+.contato-botoes ul li a {
+    transition: 0.2s;
 }
 
 .redes-link {
@@ -446,11 +488,10 @@ section.contato {
     padding: 10px;
     display: flex;
     border-radius: 50%;
-    border: 1px solid #AD0485;
-    background: rgba(0, 0, 0, 0.34);
-    backdrop-filter: blur(23.5px);
+    background-color: rgba(154, 154, 154, 0.212);
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
 
 .redes-link ul li a svg {
@@ -459,14 +500,31 @@ section.contato {
 }
 
 .redes-link ul li a:hover {
-    transform: scale(1.05);
-    transition: 0.2s;
+    transform: translateY(-3px);
+
 }
 
 a.contato-btn {
     width: auto;
-    padding: 30px 30px;
+    padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50px;
+}
+
+
+.contato-botoes ul li a.contato-first {
+    border: 1px solid #AD0485;
+    background: rgba(26, 26, 26, 0.34);
+    backdrop-filter: blur(23.5px);
+
+}
+
+.contato-botoes ul li a.contato-first img {
+    transform: rotate(-45deg);
+}
+
+.contato a.contato-first:hover {
+    background: rgba(0, 0, 0, 0.255);
 }

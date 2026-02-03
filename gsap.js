@@ -57,8 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger, CustomEase);
+  gsap.registerPlugin(ScrollTrigger, CustomEase, SplitText);
 
+  let split = SplitText.create(".split-txt", { type: "chars" });
+  let splitLogo = SplitText.create(".split-logo", { type: "chars" });
 
   CustomEase.create("turbo", "0.95, 0, 3, 1");
   CustomEase.create("jao", "0.4, 0.45, 0.2, 1");
@@ -71,9 +73,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
       tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.8 })
         .from(".header", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.4")
         .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<")
-        .from(".heroH1", { y: -400, scale: 10, opacity: 0, duration: 1, ease: "power4.inOut" });
+        .from(".heroH1", { y: -400, scale: 10, opacity: 0, duration: 1, ease: "power4.inOut" })
+        .from(splitLogo.chars, {
+          opacity: 0,
+          y: -20,
+          duration: 0.7,
+          stagger: 0.03,
+          ease: "power2.out"
+        }, "<");
 
       // SECTION SOBRE
+
       gsap.timeline({
         scrollTrigger: {
           trigger: ".sobre",
@@ -84,7 +94,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
           markers: false,
         }
       })
-        .from(".sobre-titulo", { x: -200, opacity: 0 });
+        .from(split.chars, {
+          opacity: 0.3,
+          duration: 2,
+          stagger: 0.06,
+          ease: "power2.out"
+        });
 
       // SECTION PORTFOLIO
       gsap.timeline({
@@ -142,8 +157,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         );
 
     },
-
-
 
 
 
