@@ -20,7 +20,7 @@ ul li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -43,13 +43,14 @@ h1 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 110px;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 50px;
     font-weight: normal;
 }
 
 h2 {
     font-size: 90px;
+    font-weight: normal;
     font-family: 'clash', sans-serif;
     background: linear-gradient(to right, #b3b0b3 0%, #ffffff 50%, #c3c0c3 100%);
     -webkit-background-clip: text;
@@ -93,12 +94,13 @@ div.header {
     align-items: center;
 }
 
-.logo  a{
+.logo a {
     color: rgb(255, 255, 255);
     font-size: 30px;
 }
 
 .header-dir .hamburguer {
+    padding: 10px 0 10px 10px;
     justify-items: end;
     transition: all 0.3s ease;
 }
@@ -148,10 +150,18 @@ div.header {
     overflow-y: auto;
 }
 
+.nav-menu p {
+    margin: 60px 0;
+    color: #eee;
+    font-size: 80px;
+}
+
 .nav-menu ul {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     width: 100%;
 }
 
@@ -192,7 +202,7 @@ header .hero-fundo {
     font-family: 'Zalando Sans Expanded', sans-serif;
     font-size: 20px;
     color: #e8e6e6e8;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     letter-spacing: 1px;
 }
 
@@ -202,7 +212,8 @@ header .hero-fundo {
 
 /* Buttons (hero) */
 a.btn {
-    height: 60px;
+    height: 50px;
+    width: 190px;
     display: inline-block;
     text-align: center;
     text-decoration: none;
@@ -210,7 +221,7 @@ a.btn {
     color: #eeeeee;
     border-radius: 30px;
     background-color: rgba(154, 154, 154, 0.212);
-    padding: 15px 25px;
+    padding: 10px 15px;
     font-size: 18px;
     white-space: nowrap;
     vertical-align: middle;
@@ -233,6 +244,10 @@ a.btn img {
 
 a.btn-port img {
     rotate: -45deg;
+}
+
+a.btn-contato img {
+    margin-left: 15px;
 }
 
 a.btn:hover {
@@ -386,6 +401,8 @@ section.contato {
 
 .contato .contato-fundo h2 {
     font-family: 'clash', sans-serif;
+    font-size: 90px;
+    font-weight: normal;
     color: #f9f9f9;
     margin-bottom: 20px;
     z-index: 2;
@@ -404,47 +421,6 @@ section.contato {
 
 .contato-botoes ul li {
     list-style: none;
-}
-
-.contato .contato-btn {
-    padding: 20px;
-    width: auto;
-    height: 60px;
-    text-decoration: none;
-    display: flex;
-    border-radius: 70px;
-    border: 1px solid #AD0485;
-    background: rgba(0, 0, 0, 0.34);
-    backdrop-filter: blur(23.5px);
-    justify-content: center;
-    align-items: center;
-}
-
-.contato-botoes .contato-btn:hover {
-    transform: scale(1.05);
-    background: rgb(135, 135, 135);
-    transition: 0.2s;
-}
-
-.contato .contato-btn span {
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Zalando Sans Expanded', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    color: #eee;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-section.contato .contato-btn img {
-    background-color: black;
-    border-radius: 30px;
-    padding: 10px;
-    width: 60px;
-    height: 60px;
 }
 
 .redes-link {
@@ -487,9 +463,10 @@ section.contato .contato-btn img {
     transition: 0.2s;
 }
 
-h3.txt-footer {
-    font-size: 200px;
-    color: #00000051;
+a.contato-btn {
+    width: auto;
+    padding: 30px 30px;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }

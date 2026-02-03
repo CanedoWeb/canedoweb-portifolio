@@ -12,7 +12,6 @@ window.addEventListener('load', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const hamburguer = document.querySelector('.hamburguer');
   const navMenu = document.getElementById('navMenu');
-  const navLinks = document.querySelectorAll('.nav-menu a');
   let menuOpen = false;
 
   // Toggle menu (abrir/fechar)
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       menuOpen = !menuOpen;
       hamburguer.classList.toggle('active');
-      
+
       if (menuOpen) {
         gsap.to(navMenu, {
           right: 0,
@@ -41,20 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // Fechar menu ao clicar em um link
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      menuOpen = false;
-      hamburguer.classList.remove('active');
-      gsap.to(navMenu, {
-        right: '-100%',
-        duration: 0.4,
-        ease: "power2.in"
-      });
-      document.body.style.overflow = 'auto';
-    });
-  });
 
   // Fechar menu ao clicar fora dele
   document.addEventListener('click', (e) => {
@@ -84,8 +69,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       const tl = gsap.timeline();
 
       tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.8 })
-        .from(".heroH1", { y: -400, scale: 10, opacity: 0, duration: 1, ease: "power4.inOut" })
-        .from(".heroP, .hero-btn", { opacity: 0, duration: 1, ease: "power4.inOut" }, "1");
+        .from(".header", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.4")
+        .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<")
+        .from(".heroH1", { y: -400, scale: 10, opacity: 0, duration: 1, ease: "power4.inOut" });
 
       // SECTION SOBRE
       gsap.timeline({
@@ -113,20 +99,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
       })
         .from(".projetos-titulo", { x: -100, opacity: 0 })
         .from(".projeto-card", { y: 300, opacity: 0, scale: 0.5, stagger: 0.1 }, "<");
-        
-        //SECTION SERVICOS
-        gsap.timeline({
-          scrollTrigger: {
-            trigger: ".servicos",
-            start: "10% 85%",
-            end: "60% 70%",
-            toggleActions: "restart reverse restart reverse",
-            scrub: 1,
-            markers: false,
-          }
-        })
-          .from(".servicos-titulo", { x: -100, opacity: 0 })
-        
+
+      //SECTION SERVICOS
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: ".servicos",
+          start: "10% 85%",
+          end: "40% 70%",
+          toggleActions: "restart reverse restart reverse",
+          scrub: 1,
+          markers: false,
+        }
+      })
+        .from(".servicos-titulo", { x: -100, opacity: 0 })
+
       //SECTION CONTATO
       gsap.timeline({
         scrollTrigger: {
@@ -138,10 +124,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
           markers: false,
         }
       })
-      .fromTo(
-        ".contato",
-        {
-          rotateX: 90,
+        .fromTo(
+          ".contato",
+          {
+            rotateX: 90,
             scaleX: 0.5,
             opacity: 0,
             transformOrigin: "center center",
