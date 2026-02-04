@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
       })
         .from(".servicos-titulo", { x: -100, opacity: 0 })
-        .from(".list-child, .right", { y: 300, opacity: 0, duration: 1,scale: 0.5, stagger: 0.3 });
+        .from(".list-child, .right", { y: 300, opacity: 0, duration: 1, scale: 0.5, stagger: 0.3 });
 
 
       // PIN SECTION - METODO FLOW
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
               slides[i],
               {
                 autoAlpha: 1,
-                duration: 0.6,
+                duration: 0.4,
               },
               "<"
             )
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
               slides[i - 1],
               {
                 autoAlpha: 0,
-                duration: 0.6,
+                duration: 0.4,
               },
               "<"
             );
