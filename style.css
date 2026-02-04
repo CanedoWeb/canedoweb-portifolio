@@ -18,6 +18,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: 'clashR';
+    src: url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -102,6 +109,8 @@ div.header {
 .logo a {
     color: rgb(255, 255, 255);
     font-size: 30px;
+    font-family: 'clashR', sans-serif;
+    font-weight: normal;
 }
 
 .header-dir .hamburguer {
@@ -166,6 +175,11 @@ div.header {
     text-align: center;
 }
 
+.nav-menu h3 a {
+    text-decoration: none;
+    color: #1a1a1aeb;
+}
+
 .nav-menu ul {
     display: flex;
     flex-direction: column;
@@ -216,9 +230,9 @@ header .hero-fundo {
 /* Hero Section Texts */
 .hero-content {
     height: 100%;
-    background: rgba(0, 0, 0, 0.067);
+    background: linear-gradient(rgba(0, 0, 0, 0), #0f0f0f31 50%);
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     text-align: center;
