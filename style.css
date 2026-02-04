@@ -403,7 +403,7 @@ section.projetos {
 }
 
 .projetos-titulo h2 {
-    white-space: nowrap;
+    margin-bottom: 50px;
 }
 
 .projetos-box {
