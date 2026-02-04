@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger, CustomEase, SplitText);
 
-  let split = SplitText.create(".split-txt", { type: "chars" });
+  let split = SplitText.create(".split-txt", { type: "words, chars" });
   let splitLogo = SplitText.create(".split-logo", { type: "chars" });
 
   CustomEase.create("turbo", "0.95, 0, 3, 1");
@@ -120,93 +120,95 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
           trigger: ".servicos",
           start: "10% 85%",
-          end: "40% 70%",
+          end: "80% 70%",
           toggleActions: "restart reverse restart reverse",
           scrub: 1,
           markers: false,
         }
       })
         .from(".servicos-titulo", { x: -100, opacity: 0 })
+        .from(".list-child, .right", { y: 300, opacity: 0, duration: 1,scale: 0.5, stagger: 0.3 });
+
 
       // PIN SECTION - METODO FLOW
       const list = document.querySelector(".list");
-        const fill = document.querySelector(".fill");
-        const listItems = gsap.utils.toArray("li", list);
-        const slides = gsap.utils.toArray(".slide");
+      const fill = document.querySelector(".fill");
+      const listItems = gsap.utils.toArray("li", list);
+      const slides = gsap.utils.toArray(".slide");
 
-        const tl2 = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".div-pai",
-            start: "top top",
-            end: "+=" + listItems.length * 90 + "%",
-            pin: true,
-            scrub: true
-          }
+      const tl2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".div-pai",
+          start: "top top",
+          end: "+=" + listItems.length * 80 + "%",
+          pin: true,
+          scrub: true
+        }
+      });
+
+      // First element visible, set the marker
+      fill &&
+        gsap.set(fill, {
+          scaleY: 1 / listItems.length,
+          transformOrigin: "top left"
         });
 
-        // First element visible, set the marker
-        fill &&
-          gsap.set(fill, {
-            scaleY: 1 / listItems.length,
-            transformOrigin: "top left"
-          });
 
+      listItems.forEach((item, i) => {
+        const previousItem = listItems[i - 1];
+        if (previousItem) {
+          tl2.set(item, { color: "#c20c97", oppacity: 1 }, 0.5 * i)
+            .to(
+              slides[i],
+              {
+                autoAlpha: 1,
+                duration: 0.6,
+              },
+              "<"
+            )
+            .set(previousItem, { color: "#eee", opacity: 1 }, "<")
+            .to(
+              slides[i - 1],
+              {
+                autoAlpha: 0,
+                duration: 0.6,
+              },
+              "<"
+            );
+        } else {
+          gsap.set(item, { color: "#c20c97" });
+          gsap.set(slides[i], { autoAlpha: 1 });
+        }
+      });
 
-        listItems.forEach((item, i) => {
-          const previousItem = listItems[i - 1];
-          if (previousItem) {
-            tl2.set(item, { color: "#c20c97", oppacity: 1}, 0.5 * i)
-              .to(
-                slides[i],
-                {
-                  autoAlpha: 1,
-                  duration: 0.6,
-                },
-                "<"
-              )
-              .set(previousItem, { color: "#eee",opacity: 1 }, "<")
-              .to(
-                slides[i - 1],
-                {
-                  autoAlpha: 0,
-                  duration: 0.6,
-                },
-                "<"
-              );
-          } else {
-            gsap.set(item, { color: "#c20c97"});
-            gsap.set(slides[i], { autoAlpha: 1 });
-          }
-        });
+      tl2.to(
+        fill,
+        {
+          scaleY: 1,
+          transformOrigin: "top left",
+          ease: "none",
+          duration: tl2.duration()
+        },
+        0
+      ).to({}, { duration: 0.3 });
 
-        tl2.to(
-          fill,
-          {
-            scaleY: 1,
-            transformOrigin: "top left",
-            ease: "none",
-            duration: tl2.duration()
-          },
-          0
-        ).to({}, {duration: 0.3});
-
-        //SECTION CONTATO
-        tl2.fromTo(
-          ".contato",
-          {
-            rotateX: 90,
-            scaleX: 0.5,
-            opacity: 0,
-            transformOrigin: "center center",
-            transformPerspective: 3000
-          },
-          {
-            rotateX: 0,
-            scale: 1,
-            opacity: 1,
-            duration: 1
-          }
-        );// add a small pause at the end of the timeline before it un-pins
+      //SECTION CONTATO
+      tl2.fromTo(
+        ".contato",
+        {
+          rotateX: 90,
+          scaleX: 0.5,
+          opacity: 0,
+          transformOrigin: "center center",
+          transformPerspective: 3000
+        },
+        {
+          rotateX: 0,
+          scale: 1,
+          opacity: 1,
+          duration: 1
+        }
+      );
     },
 
 
