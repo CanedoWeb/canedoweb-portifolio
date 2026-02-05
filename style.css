@@ -352,7 +352,7 @@ button.button img {
 
 .sobre p {
     color: #e0e0e0;
-    font-size: 32px;
+    font-size: 38px;
 }
 
 .sobre-cima {
@@ -373,7 +373,7 @@ button.button img {
 }
 
 .sobre-txt-baixo {
-    max-width: 48%;
+    max-width: 50%;
     text-align: right;
     word-break: keep-all;
 }
