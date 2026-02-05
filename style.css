@@ -525,7 +525,7 @@ div.section {
     object-fit: cover;
 }
 
-.right .slide .txt-slide{
+.right .slide .txt-slide {
     align-self: flex-start;
     margin-top: 30px;
     display: flex;
@@ -553,14 +553,23 @@ div.section {
     font-size: 24px;
 }
 
-.right .slide h3.ponto-especial{
+.right .slide h3.ponto-especial {
     color: #DF3FBE;
+    font-size: 58px;
 }
 
 img {
     width: 100%;
     max-width: 300px;
 }
+
+.right .slide .txt-slide  a{
+    border: 1px solid #AD0485;
+    background: rgba(26, 26, 26, 0.34);
+    backdrop-filter: blur(23.5px);
+    transition: 0.3s;
+}
+
 
 
 /* FOOTER / CONTATO */

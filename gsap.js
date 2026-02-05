@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.8 })
     .from(".header", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.4")
-    .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<")
     .from(".heroH1", { y: -400, scale: 10, opacity: 0, duration: 1, ease: "power4.inOut" })
+    .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.5")
     .from(splitLogo.chars, {
       opacity: 0,
       y: -20,

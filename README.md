@@ -1,21 +1,27 @@
-#  Site Flowpixel Studio
+Site institucional do Flowpixel Studio, um estúdio de design e desenvolvimento web focado em experiências digitais estratégicas, performáticas e visualmente marcantes.
 
-**Link do site:** Canedoweb.vercel.app
+O projeto apresenta o Método Flow, serviços, identidade visual e interações animadas que reforçam o posicionamento do estúdio.
 
-*“Onde o seu talento encontra a web — desenhado com visão, performance e aquele toque que só o Canedo tem.”*
+✦ Tecnologias
 
----
+HTML5
 
-##  Visão Geral
-Um portfólio pessoal para destacar meus projetos, habilidades e trajetória como desenvolvedor web. Ideal para apresentar sua experiência em front-end, UI/UX e performance — tudo com aquela pegada profissional e criativa.
+CSS3
 
----
+JavaScript (ES6+)
 
-##  Tecnologias Utilizadas  
-- **HTML5** — estrutura e semântica web  
-- **CSS3** — layout, responsividade e estilo fluido  
-- **JavaScript (Vanilla) e GSAP** — interações dinâmicas e fluidez UX  
+GSAP (ScrollTrigger, CustomEase, SplitText)
 
----
+✦ Conceitos Aplicados
 
+Design minimalista e futurista
 
+Motion design como linguagem
+
+Performance e fluidez de navegação
+
+Arquitetura visual orientada à conversão
+
+✦ Objetivo
+
+Comunicar valor, método e diferenciação do estúdio através de uma experiência digital clara, fluida e estratégica.
