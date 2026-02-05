@@ -570,6 +570,10 @@ img {
     transition: 0.3s;
 }
 
+.right .slide .txt-slide  a img{
+    transform: rotate(-45deg);
+}
+
 
 
 /* FOOTER / CONTATO */
