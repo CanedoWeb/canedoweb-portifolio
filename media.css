@@ -526,4 +526,8 @@
         flex-wrap: wrap;
     }
 
+    .contato-botoes ul li a {
+        flex-wrap: wrap;
+    }
+
 }
