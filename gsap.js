@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburguer = document.querySelector('.hamburguer');
   const navMenu = document.getElementById('navMenu');
   let menuOpen = false;
+  let a = document.getElementById('a-menu')
 
   // Toggle menu (abrir/fechar)
   if (hamburguer) {
@@ -43,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fechar menu ao clicar fora dele
   document.addEventListener('click', (e) => {
-    if (!navMenu.contains(e.target) && !hamburguer.contains(e.target) && menuOpen) {
+    if (!navMenu.contains(e.target) && !hamburguer.contains(e.target) && menuOpen || a.contains(e.target)) {
+
       menuOpen = false;
       hamburguer.classList.remove('active');
       gsap.to(navMenu, {
