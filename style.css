@@ -553,6 +553,10 @@ div.section {
     font-size: 24px;
 }
 
+.right .slide h3.ponto-especial{
+    color: #DF3FBE;
+}
+
 img {
     width: 100%;
     max-width: 300px;

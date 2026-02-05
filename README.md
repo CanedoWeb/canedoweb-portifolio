@@ -1,4 +1,4 @@
-#  Canedo Portfólio
+#  Site Flowpixel Studio
 
 **Link do site:** Canedoweb.vercel.app
 
