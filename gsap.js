@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     scrollTrigger: {
       trigger: ".sobre",
       start: "0% 90%",
-      end: "90% 60%",
+      end: "70% 60%",
       toggleActions: "restart reverse restart reverse",
       scrub: 1,
       markers: false,

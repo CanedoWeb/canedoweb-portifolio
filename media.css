@@ -385,7 +385,7 @@
 
     /* SOBRE */
     .sobre {
-        padding: 100px 0;
+        padding: 80px 0 50px;
     }
 
     .sobre-fundo {
@@ -401,7 +401,7 @@
         justify-content: left;
     }
 
-    .sobre-baixo{
+    .sobre-baixo {
         justify-content: right;
     }
 
@@ -410,7 +410,7 @@
         text-align: left;
     }
 
-    .sobre-txt-baixo{
+    .sobre-txt-baixo {
         max-width: 100%;
         text-align: right;
     }
@@ -427,11 +427,12 @@
 
     /* SERVIÇOS / ETAPAS */
     .servicos {
-        height: auto;
+        height: 100vh;
     }
 
     div.section {
-        height: auto;
+        border: 2px;
+        height: 100%;
         padding: 80px 0;
     }
 
@@ -461,9 +462,18 @@
     }
 
     .right .slide {
+        margin-top: 100px;
         flex-direction: column;
         gap: 30px;
         text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right .slide .txt-slide {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     .right .slide img {
@@ -473,6 +483,10 @@
     .right .slide h3 {
         font-size: 36px;
         text-align: center;
+    }
+
+    .right .slide h3.ponto-especial {
+        font-size: 36px;
     }
 
     .right .slide p {
