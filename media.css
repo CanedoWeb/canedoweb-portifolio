@@ -499,12 +499,12 @@
     /* CONTATO */
     section.contato,
     .div-pai {
-        height: auto;
+        height: 100vh;
     }
 
     .contato .contato-fundo {
         padding: 120px 20px 60px;
-        height: auto;
+        height: 100vh;
     }
 
     .contato .contato-fundo h2 {
