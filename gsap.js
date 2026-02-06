@@ -4,11 +4,6 @@ if ('scrollRestoration' in history) {
 }
 
 window.addEventListener('load', () => {
-  new kursor({
-    type: 1,
-    color: 'rgb(170, 170, 170)',
-    removeDefaultCursor: true
-  })
   ScrollTrigger.refresh(true);
   setTimeout(() => window.scrollTo(0, 0), 50);
 });
