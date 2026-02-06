@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-/* aplique nos elementos animados */
-
-
 @font-face {
     font-family: 'clash';
     src: url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Medium.otf') format('opentype');
