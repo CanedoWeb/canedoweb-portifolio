@@ -65,7 +65,7 @@
 
     header .hero-fundo {
         background-size: cover;
-        background-image: url('assets/img/discotopmob.webp');
+        background-image: url('assets/img/discotopmob_11zon.webp');
     }
 
     .txt-hero {
@@ -214,7 +214,7 @@
     }
 
     .contato .contato-fundo {
-        background-image: url('assets/img/discobotmob.webp');
+        background-image: url('assets/img/discobotmob\ \(1\)_11zon.webp');
         padding: 120px 20px 60px;
         height: 100%;
     }
