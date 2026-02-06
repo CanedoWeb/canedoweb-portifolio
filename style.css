@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+/* aplique nos elementos animados */
+.hero-fundo,
+.header,
+.heroH1,
+.heroP,
+.hero-btn,
+.projeto-card,
+.list-child,
+.right,
+.slide,
+.contato {
+    will-change: transform, opacity;
+}
+
+
 @font-face {
     font-family: 'clash';
     src: url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Medium.otf') format('opentype');
@@ -521,7 +536,7 @@ div.section {
     visibility: hidden;
 }
 
-.right .slide > img {
+.right .slide>img {
     object-fit: cover;
     width: 30%;
 }
@@ -557,7 +572,8 @@ div.section {
 .right .slide h3.ponto-especial {
     font-size: 58px;
 }
-.right .slide h3.ponto-especial span{
+
+.right .slide h3.ponto-especial span {
     color: #c20c97;
 }
 

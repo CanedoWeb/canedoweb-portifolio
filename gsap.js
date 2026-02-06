@@ -58,154 +58,306 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger, CustomEase, SplitText);
 
+  ScrollTrigger.config({ ignoreMobileResize: true });
+
+
+  const mm = gsap.matchMedia();
+
   let split = SplitText.create(".split-txt", { type: "words, chars" });
   let splitLogo = SplitText.create(".split-logo", { type: "chars" });
-
-  CustomEase.create("turbo", "0.95, 0, 3, 1");
-  CustomEase.create("jao", "0.4, 0.45, 0.2, 1");
-
-  const tl = gsap.timeline();
-
-  tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.8 })
-    .from(".header", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.4")
-    .from(".heroH1", { y: -400, scale: 10, opacity: 0, duration: 1, ease: "power4.inOut" })
-    .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.5")
-    .from(splitLogo.chars, {
-      opacity: 0,
-      y: -20,
-      duration: 0.7,
-      stagger: 0.03,
-      ease: "power2.out"
-    }, "<");
-
-  // SECTION SOBRE
-
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".sobre",
-      start: "0% 90%",
-      end: "70% 60%",
-      toggleActions: "restart reverse restart reverse",
-      scrub: 1,
-      markers: false,
-    }
-  })
-    .from(split.chars, {
-      opacity: 0.3,
-      duration: 2,
-      stagger: 0.06,
-      ease: "power2.out"
-    });
-
-  // SECTION PORTFOLIO
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".projetos",
-      start: "10% 85%",
-      end: "60% 40%",
-      toggleActions: "restart reverse restart reverse",
-      scrub: 1,
-      markers: false,
-    }
-  })
-    .from(".projetos-titulo", { x: -100, opacity: 0 })
-    .from(".projeto-card", { y: 300, opacity: 0, scale: 0.5, stagger: 0.1 }, "<");
-
-  //SECTION SERVICOS
-  gsap.timeline({
-    scrollTrigger: {
-      trigger: ".servicos",
-      start: "10% 85%",
-      end: "80% 70%",
-      toggleActions: "restart reverse restart reverse",
-      scrub: 1,
-      markers: false,
-    }
-  })
-    .from(".servicos-titulo", { x: -100, opacity: 0 })
-    .from(".list-child, .right", { y: 300, opacity: 0, duration: 1, scale: 0.5, stagger: 0.3 });
-
-
-  // PIN SECTION - METODO FLOW
   const list = document.querySelector(".list");
   const fill = document.querySelector(".fill");
   const listItems = gsap.utils.toArray("li", list);
   const slides = gsap.utils.toArray(".slide");
 
-  const tl2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".div-pai",
-      start: "top top",
-      end: "+=" + listItems.length * 80 + "%",
-      pin: true,
-      scrub: true
-    }
-  });
 
-  // First element visible, set the marker
-  fill &&
-    gsap.set(fill, {
-      scaleY: 1 / listItems.length,
-      transformOrigin: "top left"
+
+  mm.add("(min-width: 769px)", () => {
+    const tl = gsap.timeline();
+
+    tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.8 })
+      .from(".header", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.4")
+      .from(splitLogo.chars, {
+        opacity: 0,
+        y: -20,
+        duration: 0.7,
+        stagger: 0.03,
+        ease: "power2.out"
+      }, "<")
+      .from(".heroH1", { y: -400, scale: 8, opacity: 0, duration: 1, ease: "power4.inOut" })
+      .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.5");
+
+    // SECTION SOBRE
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sobre",
+        start: "0% 90%",
+        end: "95% 60%",
+        toggleActions: "restart reverse restart reverse",
+        scrub: 1,
+        markers: false,
+      }
+    })
+      .from(split.chars, {
+        opacity: 0.3,
+        duration: 2,
+        stagger: 0.06,
+        ease: "power2.out"
+      });
+
+    // SECTION PORTFOLIO
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projetos",
+        start: "10% 85%",
+        end: "60% 40%",
+        toggleActions: "restart reverse restart reverse",
+        scrub: 1,
+        markers: false,
+      }
+    })
+      .from(".projetos-titulo", { x: -100, opacity: 0 })
+      .from(".projeto-card", { y: 300, opacity: 0, scale: 0.5, stagger: 0.1 }, "<");
+
+    //SECTION SERVICOS
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".servicos",
+        start: "10% 85%",
+        end: "80% 70%",
+        toggleActions: "restart reverse restart reverse",
+        scrub: 1,
+        markers: false,
+      }
+    })
+      .from(".servicos-titulo", { x: -100, opacity: 0 })
+      .from(".list-child, .right", { y: 300, opacity: 0, duration: 1, scale: 0.5, stagger: 0.3 });
+
+
+    // PIN SECTION - METODO FLOW
+
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".div-pai",
+        start: "top top",
+        end: "+=" + listItems.length * 80 + "%",
+        pin: true,
+        scrub: true
+      }
     });
 
+    // First element visible, set the marker
+    fill &&
+      gsap.set(fill, {
+        scaleY: 1 / listItems.length,
+        transformOrigin: "top left"
+      });
 
-  listItems.forEach((item, i) => {
-    const previousItem = listItems[i - 1];
-    if (previousItem) {
-      tl2.set(item, { color: "#c20c97", opacity: 1 }, 0.5 * i)
-        .to(
-          slides[i],
-          {
-            autoAlpha: 1,
-            duration: 0.4,
-          },
-          "<"
-        )
-        .set(previousItem, { color: "#eee", opacity: 1 }, "<")
-        .to(
-          slides[i - 1],
-          {
-            autoAlpha: 0,
-            duration: 0.4,
-          },
-          "<"
-        );
-    } else {
-      gsap.set(item, { color: "#c20c97" });
-      gsap.set(slides[i], { autoAlpha: 1 });
-    }
+
+    listItems.forEach((item, i) => {
+      const previousItem = listItems[i - 1];
+      if (previousItem) {
+        tl2.set(item, { color: "#c20c97", opacity: 1 }, 0.5 * i)
+          .to(
+            slides[i],
+            {
+              autoAlpha: 1,
+              duration: 0.4,
+            },
+            "<"
+          )
+          .set(previousItem, { color: "#eee", opacity: 1 }, "<")
+          .to(
+            slides[i - 1],
+            {
+              autoAlpha: 0,
+              duration: 0.4,
+            },
+            "<"
+          );
+      } else {
+        gsap.set(item, { color: "#c20c97" });
+        gsap.set(slides[i], { autoAlpha: 1 });
+      }
+    });
+
+    tl2.to(
+      fill,
+      {
+        scaleY: 1,
+        transformOrigin: "top left",
+        ease: "none",
+        duration: tl2.duration()
+      },
+      0
+    ).to({}, { duration: 0.3 });
+
+    //SECTION CONTATO
+    tl2.fromTo(
+      ".contato",
+      {
+        rotateX: 90,
+        scaleX: 0.5,
+        opacity: 0.8,
+        transformOrigin: "center center",
+        transformPerspective: 3000
+      },
+      {
+        rotateX: 0,
+        scale: 1,
+        opacity: 1,
+        duration: 1
+      }
+    );
   });
 
-  tl2.to(
-    fill,
-    {
-      scaleY: 1,
-      transformOrigin: "top left",
-      ease: "none",
-      duration: tl2.duration()
-    },
-    0
-  ).to({}, { duration: 0.3 });
+  mm.add("(max-width: 768px)", () => {
 
-  //SECTION CONTATO
-  tl2.fromTo(
-    ".contato",
-    {
-      rotateX: 90,
-      scaleX: 0.5,
-      opacity: 0,
-      transformOrigin: "center center",
-      transformPerspective: 3000
-    },
-    {
-      rotateX: 0,
-      scale: 1,
-      opacity: 1,
-      duration: 1
-    }
-  );
+    // HERO (simples e rápido)
+    const tl = gsap.timeline();
+
+    tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.6 })
+      .from(".header", { opacity: 0, duration: 0.6, ease: "power3.out" }, "-=0.3")
+      .from(splitLogo.chars, {
+        opacity: 0,
+        y: -10,
+        duration: 0.5,
+        stagger: 0.02,
+        ease: "power2.out"
+      }, "<")
+      .from(".heroH1", { y: -80, scale: 1.2, opacity: 0, duration: 0.7, ease: "power3.out" })
+      .from(".heroP, .hero-btn", { opacity: 0, y: 10, duration: 0.5, ease: "power3.out", stagger: 0.08 }, "-=0.4");
+
+    // SECTION SOBRE
+
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".sobre",
+        start: "0% 90%",
+        end: "80% 60%",
+        toggleActions: "restart reverse restart reverse",
+        scrub: 0.3,
+        markers: false,
+      }
+    })
+      .from(split.chars, {
+        opacity: 0.3,
+        duration: 1.2,
+        stagger: 1,
+        ease: "power2.out"
+      });
+
+    // SECTION PORTFOLIO
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".projetos",
+        start: "10% 85%",
+        end: "60% 40%",
+        toggleActions: "restart reverse restart reverse",
+        scrub: 0.3,
+        markers: false,
+      }
+    })
+      .from(".projetos-titulo", { x: -100, opacity: 0 })
+      .from(".projeto-card", { y: 120, opacity: 0, scale: 0.9, duration: 0.6, stagger: 0.06 }, "<");
+
+    //SECTION SERVICOS
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: ".servicos",
+        start: "10% 85%",
+        end: "80% 70%",
+        toggleActions: "restart reverse restart reverse",
+        scrub: 0.3,
+        markers: false,
+      }
+    })
+      .from(".servicos-titulo", { x: -100, opacity: 0 })
+      .from(".list-child, .right", { y: 120, opacity: 0, duration: 0.7, scale: 0.9, stagger: 0.15 });
+
+
+    // PIN SECTION - METODO FLOW
+
+
+    const tl2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".div-pai",
+        start: "top top",
+        end: "+=" + listItems.length * 60 + "%",
+        pin: true,
+        scrub: 0.2
+      }
+    });
+
+    // First element visible, set the marker
+    fill &&
+      gsap.set(fill, {
+        scaleY: 1 / listItems.length,
+        transformOrigin: "top left"
+      });
+
+
+    listItems.forEach((item, i) => {
+      const previousItem = listItems[i - 1];
+      if (previousItem) {
+        tl2.set(item, { color: "#c20c97" }, 0.5 * i)
+          .to(
+            slides[i],
+            {
+              autoAlpha: 1,
+              duration: 0.3,
+            },
+            "<"
+          )
+          .set(previousItem, { color: "#eee" }, "<")
+          .to(
+            slides[i - 1],
+            {
+              autoAlpha: 0,
+              duration: 0.3,
+            },
+            "<"
+          );
+      } else {
+        gsap.set(item, { color: "#c20c97" });
+        gsap.set(slides[i], { autoAlpha: 1 });
+      }
+    });
+
+    tl2.to(
+      fill,
+      {
+        scaleY: 1,
+        transformOrigin: "top left",
+        ease: "none",
+        duration: tl2.duration()
+      },
+      0
+    ).to({}, { duration: 0.3 });
+
+    //SECTION CONTATO
+    tl2.fromTo(
+      ".contato",
+      {
+        rotateX: 90,
+        scaleX: 0.5,
+        opacity: 0.8,
+        transformOrigin: "center center",
+        transformPerspective: 1000
+      },
+      {
+        rotateX: 0,
+        scale: 1,
+        opacity: 1,
+        duration: 0.7
+      }
+    );
+  });
 });
+
