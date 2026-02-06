@@ -244,7 +244,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // HERO (simples e rápido)
     const tl = gsap.timeline();
 
-    tl.from(".header", { opacity: 0.5, duration: 0.6, ease: "power3.out" })
+    tl.fromTo(".hero-fundo", { opacity: 0.5 }, { opacity: 1, duration: 0.6 })
+      .from(".header", { opacity: 0.5, duration: 0.6, ease: "power3.out" }, "-=0.3")
       .from(splitLogo.chars, {
         opacity: 0,
         y: -10,
