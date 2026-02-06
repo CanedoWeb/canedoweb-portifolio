@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger, CustomEase, SplitText);
+  gsap.registerPlugin(ScrollTrigger, SplitText);
 
   ScrollTrigger.config({ ignoreMobileResize: true });
 
