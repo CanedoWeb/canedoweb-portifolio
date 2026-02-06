@@ -64,10 +64,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   ScrollTrigger.config({ ignoreMobileResize: true });
 
-
   const mm = gsap.matchMedia();
 
-  let splitH2 = SplitText.create(".split-h2", { type: " chars" });
   let split = SplitText.create(".split-txt", { type: "words, chars" });
   let splitLogo = SplitText.create(".split-logo", { type: "chars" });
   const list = document.querySelector(".list");
@@ -99,7 +97,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const tl = gsap.timeline();
 
     tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.8 })
-      .from(".header", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.4")
+      .from(".header", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<")
       .from(splitLogo.chars, {
         opacity: 0,
         y: -20,
@@ -108,7 +106,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: "power2.out"
       }, "<")
       .from(".heroH1", { y: -400, scale: 8, opacity: 0, duration: 1, ease: "power4.inOut" }, "-=0.5")
-      .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.5");
+      .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<");
 
     // SECTION SOBRE
 
