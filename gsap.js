@@ -75,16 +75,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   function splitH2ScrollAnimation() {
     gsap.utils.toArray(".split-h2").forEach((h2) => {
+      if (h2.closest(".contato")) return;
       const split = SplitText.create(h2, { type: "chars" });
 
       gsap.from(split.chars, {
         scrollTrigger: {
           trigger: h2,
-          start: "top 85%"
+          start: "top 85%",
+          toggleActions: "restart reverse restart reverse"
         },
         opacity: 0,
         y: -50,
         stagger: 0.04,
+        duration: 0.7,
         ease: "power2.out"
       });
     });
@@ -106,7 +109,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: "power2.out"
       }, "<")
       .from(".heroH1", { y: -400, scale: 8, opacity: 0, duration: 1, ease: "power4.inOut" }, "-=0.5")
-      .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<");
+      .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<")
 
     // SECTION SOBRE
 
@@ -120,6 +123,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         markers: false,
       }
     })
+      .to(".heroH1, .heroP, .hero-btn", {
+        scale: 1.02,
+        duration: 2
+      })
       .from(split.chars, {
         opacity: 0.3,
         duration: 2,
@@ -219,7 +226,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       {
         rotateX: 90,
         scaleX: 0.5,
-        opacity: 0.8,
+        opacity: 0.9,
         transformOrigin: "center center",
         transformPerspective: 3000
       },
@@ -375,4 +382,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
     );
   });
 });
+
 
