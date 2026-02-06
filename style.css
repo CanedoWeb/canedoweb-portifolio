@@ -9,6 +9,7 @@
     src: url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Medium.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
     src: url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Light.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -23,6 +25,7 @@
     src: url('assets/fonts/clash-display-font-1768824553-0/ClashDisplay-Regular.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
+    font-display: swap;
 }
 
 html {
