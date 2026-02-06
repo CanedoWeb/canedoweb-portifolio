@@ -123,6 +123,7 @@
 
     /* PROJETOS */
     .projetos-fundo {
+        background: none;
         padding: 80px 5px 120px;
     }
 
