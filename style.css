@@ -225,6 +225,7 @@ header .hero-fundo {
 
 /* Hero Section Texts */
 .hero-content {
+    padding: 0 10px;
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(255, 255, 255, 0) 50%, #0f0f0f31 60%);
@@ -338,7 +339,7 @@ button.button img {
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 150px 0px 100px 0px;
+    padding: 120px 10px 100px 10px;
 }
 
 .sobre-fundo {
@@ -437,6 +438,7 @@ section.projetos {
 /* ETAPAS */
 .servicos {
     height: 100vh;
+    padding: 0 10px;
 }
 
 .servicos-fundo {

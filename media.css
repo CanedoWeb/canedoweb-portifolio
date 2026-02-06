@@ -348,6 +348,9 @@
 
     /* MENU MOBILE */
     .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         right: -100%;
         padding: 100px 20px 40px;
@@ -374,7 +377,9 @@
         margin-top: 120px;
         margin-bottom: 30px;
     }
-
+    .hero-content{
+        padding: 0 5px;
+    }
     .hero-content p {
         font-size: 16px;
         letter-spacing: 0.5px;
@@ -388,7 +393,7 @@
 
     /* SOBRE */
     .sobre {
-        padding: 0px 0px;
+        padding: 0px 5px;
     }
 
     .sobre-fundo {
@@ -420,7 +425,7 @@
 
     /* PROJETOS */
     .projetos-fundo {
-        padding: 80px 20px 120px;
+        padding: 80px 5px 120px;
     }
 
     .projetos-grid {
@@ -431,6 +436,7 @@
     /* SERVIÇOS / ETAPAS */
     .servicos {
         height: 100dvh;
+        padding: 0 5px;
     }
 
     div.section {
