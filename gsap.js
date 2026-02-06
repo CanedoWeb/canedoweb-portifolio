@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   const mm = gsap.matchMedia();
 
+  let splitH2 = SplitText.create(".split-h2", { type: " chars" });
   let split = SplitText.create(".split-txt", { type: "words, chars" });
   let splitLogo = SplitText.create(".split-logo", { type: "chars" });
   const list = document.querySelector(".list");
@@ -74,9 +75,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const listItems = gsap.utils.toArray("li", list);
   const slides = gsap.utils.toArray(".slide");
 
+  function splitH2ScrollAnimation() {
+    gsap.utils.toArray(".split-h2").forEach((h2) => {
+      const split = SplitText.create(h2, { type: "chars" });
 
+      gsap.from(split.chars, {
+        scrollTrigger: {
+          trigger: h2,
+          start: "top 85%"
+        },
+        opacity: 0,
+        y: -50,
+        stagger: 0.04,
+        ease: "power2.out"
+      });
+    });
+  }
 
   mm.add("(min-width: 769px)", () => {
+
+    splitH2ScrollAnimation()
+
     const tl = gsap.timeline();
 
     tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.8 })
@@ -88,7 +107,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         stagger: 0.03,
         ease: "power2.out"
       }, "<")
-      .from(".heroH1", { y: -400, scale: 8, opacity: 0, duration: 1, ease: "power4.inOut" })
+      .from(".heroH1", { y: -400, scale: 8, opacity: 0, duration: 1, ease: "power4.inOut" }, "-=0.5")
       .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "-=0.5");
 
     // SECTION SOBRE
@@ -121,7 +140,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         markers: false,
       }
     })
-      .from(".projetos-titulo", { x: -100, opacity: 0 })
       .from(".projeto-card", { y: 300, opacity: 0, scale: 0.5, stagger: 0.1 }, "<");
 
     //SECTION SERVICOS
@@ -135,7 +153,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         markers: false,
       }
     })
-      .from(".servicos-titulo", { x: -100, opacity: 0 })
       .from(".list-child, .right", { y: 300, opacity: 0, duration: 1, scale: 0.5, stagger: 0.3 });
 
 
@@ -264,7 +281,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         markers: false,
       }
     })
-      .from(".projetos-titulo", { x: -100, opacity: 0 })
+      .from(".projetos-titulo", { x: -50, opacity: 0 })
       .from(".projeto-card", { y: 120, opacity: 0, scale: 0.9, duration: 0.6, stagger: 0.06 }, "<");
 
     //SECTION SERVICOS
@@ -349,7 +366,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scaleX: 0.5,
         opacity: 0.8,
         transformOrigin: "center center",
-        transformPerspective: 1000
+        transformPerspective: 3000
       },
       {
         rotateX: 0,

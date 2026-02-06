@@ -397,7 +397,7 @@
     }
 
     .sobre-fundo {
-        gap: 80px;
+        gap: 30px;
     }
 
     .sobre p {
@@ -420,7 +420,7 @@
 
     .sobre-txt-baixo {
         max-width: 100%;
-        text-align: right;
+        text-align: left;
     }
 
     /* PROJETOS */
