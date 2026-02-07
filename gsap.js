@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
           trigger: h2,
           start: "top 85%",
-          toggleActions: "restart reverse restart reverse"
+          toggleActions: "play pause play reverse"
         },
         opacity: 0,
         y: -50,
@@ -123,10 +123,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         markers: false,
       }
     })
-      .to(".heroH1, .heroP, .hero-btn", {
-        scale: 1.02,
-        duration: 2
-      })
       .from(split.chars, {
         opacity: 0.3,
         duration: 2,

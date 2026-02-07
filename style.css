@@ -450,15 +450,16 @@ section.projetos {
 }
 
 div.servicos-titulo {
-    margin: 0;
+    margin: 50px 0;
+    margin-top: 50px;
     padding: 0;
 }
 
-div.section {
+div.pin-section {
     margin: auto;
     padding: 0;
     width: 98%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -846,7 +847,8 @@ a.contato-btn {
         padding: 0 5px;
     }
 
-    div.section {
+
+    div.pin-section {
         border: 2px;
         height: 100%;
         padding: 50px 0;
