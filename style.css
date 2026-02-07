@@ -407,7 +407,7 @@ section.projetos {
 }
 
 .projetos-titulo h2 {
-    margin-bottom: 50px;
+        margin: 50px 0;
 }
 
 .projetos-box {
