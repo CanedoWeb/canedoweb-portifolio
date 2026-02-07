@@ -451,7 +451,6 @@ section.projetos {
 
 div.servicos-titulo {
     margin: 50px 0;
-    margin-top: 50px;
     padding: 0;
 }
 
@@ -846,6 +845,11 @@ a.contato-btn {
         height: 100dvh;
         padding: 0 5px;
     }
+
+    div.servicos-titulo {
+    margin: 50px 0 20px;
+    padding: 0;
+}
 
 
     div.pin-section {
