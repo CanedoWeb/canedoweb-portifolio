@@ -51,6 +51,15 @@ body {
     max-width: 1920px;
 }
 
+.sobre-txt-cima img{
+    width: 50px;
+}
+
+
+.seta{
+    width: 80px;
+}
+
 .fundo {
     padding: 0 10px;
 }
