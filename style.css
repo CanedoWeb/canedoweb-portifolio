@@ -46,17 +46,17 @@ section {
 
 body {
     font-family: "Zalando Sans Expanded", sans-serif;
-    background-color: #07090E ;
+    background-color: #07090E;
     overflow-x: hidden;
     max-width: 1920px;
 }
 
-.sobre-txt-cima img{
+.sobre-txt-cima img {
     width: 50px;
 }
 
 
-.seta{
+.seta {
     width: 80px;
 }
 
@@ -207,7 +207,8 @@ div.header {
     transition: 0.2s;
     border-radius: 50px;
 }
-.nav-menu ul li a:hover{
+
+.nav-menu ul li a:hover {
     background-color: #fbf1f7e2;
 }
 
@@ -362,7 +363,7 @@ button.button img {
     background: url('assets/img/background2.webp');
     background-repeat: no-repeat;
     background-position: center left;
-    background-size: cover  ;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 150px;
@@ -427,7 +428,7 @@ section.projetos {
 }
 
 .projetos-titulo h2 {
-        margin: 50px 0;
+    margin: 50px 0;
 }
 
 .projetos-box {
@@ -690,7 +691,8 @@ section.contato {
     transition: 0.2s;
 }
 
-.redes-link ul li a svg, .redes-link ul li a img {
+.redes-link ul li a svg,
+.redes-link ul li a img {
     width: 30px;
     height: 30px;
 }
@@ -740,11 +742,15 @@ a.contato-btn {
     }
 
     h2 {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     p {
         font-size: 16px;
+    }
+
+    .seta {
+        width: 30px;
     }
 
     /* HEADER */
@@ -823,6 +829,10 @@ a.contato-btn {
         padding: 0px 5px;
     }
 
+    .sobre .seta {
+        width: 30px;
+    }
+
     .sobre-fundo {
         gap: 30px;
     }
@@ -868,9 +878,9 @@ a.contato-btn {
     }
 
     div.servicos-titulo {
-    margin: 50px 0 20px;
-    padding: 0;
-}
+        margin: 50px 0 20px;
+        padding: 0;
+    }
 
 
     div.pin-section {
