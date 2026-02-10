@@ -162,7 +162,7 @@ div.header {
     opacity: 0;
     width: 25%;
     height: 100vh;
-    background-color: #e8d9e3e2;
+    background-color: #fbd9efe2;
     backdrop-filter: blur(10px);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
@@ -202,9 +202,13 @@ div.header {
 }
 
 .nav-menu ul li a {
+    background-color: #f9e6f2e2;
     color: #0f0f0f;
     transition: 0.2s;
     border-radius: 50px;
+}
+.nav-menu ul li a:hover{
+    background-color: #fbf1f7e2;
 }
 
 .nav-menu ul li a img {
