@@ -51,26 +51,17 @@ body {
     max-width: 1920px;
 }
 
-.sobre-txt-cima img {
-    width: 50px;
-}
-
-
 .seta {
     width: 80px;
 }
 
 .fundo {
     padding: 0 10px;
-}
-
-.btn {
-    box-shadow: #0f0f0f30 0 1px 2px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Typography */
-
-
 h2 {
     font-size: 90px;
     font-weight: normal;
@@ -78,12 +69,49 @@ h2 {
     color: #eee;
 }
 
-.fundo {
-    display: flex;
-    flex-direction: column;
+.btn {
+    box-shadow: #0f0f0f30 0 1px 2px;
 }
 
-/* Header */
+/* Header / Hero */
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+header .hero-fundo {
+    background-image: url('assets/img/discotop6.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+/* estado inicial */
+.header {
+    opacity: 0.5;
+}
+
+.heroH1 {
+    opacity: 0;
+    transform: translateY(-80px) scale(8);
+}
+
+.heroP,
+.hero-btn {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.hero-fundo {
+    opacity: 0.5;
+}
 
 div.header {
     background-image: linear-gradient(#07090e72, #00000000);
@@ -153,6 +181,104 @@ div.header {
     background-color: #1a1a1a;
 }
 
+/* Hero Section Texts */
+.hero-content {
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0) 50%, #07090E31 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.txt-hero {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: 'clash', sans-serif;
+    color: white;
+    font-size: 110px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.hero-content p {
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    font-size: 20px;
+    color: #e8e6e6e8;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.hero-content li {
+    list-style: none;
+}
+
+/* Buttons (hero) */
+a.btn {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Zalando Sans Expanded', sans-serif;
+    color: #eeeeee;
+    border-radius: 30px;
+    background-color: rgba(154, 154, 154, 0.212);
+    padding: 15px 20px;
+    font-size: 18px;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    margin: 10px;
+}
+
+a.btn:hover {
+    background-color: rgba(154, 154, 154, 0.312);
+    transition: 0.2s;
+}
+
+a.btn span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+a.btn img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+a.btn-port img {
+    rotate: -45deg;
+}
+
+.hero-content a.btn-port {
+    border: 1px solid #AD0485;
+    background: rgba(26, 26, 26, 0.34);
+    backdrop-filter: blur(23.5px);
+}
+
+a.btn-contato img {
+    margin-left: 15px;
+}
+
+.hero a.btn-port:hover {
+    background: rgba(0, 0, 0, 0.255);
+}
+
+button.button img {
+    width: 30px;
+}
+
 /* Menu Slide da Direita */
 .nav-menu {
     backdrop-filter: blur(50px);
@@ -220,131 +346,6 @@ div.header {
     transform: rotate(-45deg);
 }
 
-/* Header / Hero */
-header {
-    width: 100%;
-    height: 100vh;
-}
-
-header .hero-fundo {
-    background-image: url('assets/img/discotop6.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-
-}
-
-/* Hero Section Texts */
-.hero-content {
-    padding: 0 10px;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0) 50%, #07090E31 60%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.txt-hero {
-    margin-top: 200px;
-    margin-bottom: 50px;
-}
-
-h1 {
-    font-family: 'clash', sans-serif;
-    color: white;
-    font-size: 110px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    font-weight: normal;
-}
-
-.hero-content p {
-    font-family: 'Zalando Sans Expanded', sans-serif;
-    font-size: 20px;
-    color: #e8e6e6e8;
-    margin-bottom: 18px;
-    letter-spacing: 1px;
-}
-
-.hero-content li {
-    list-style: none;
-}
-
-/* Buttons (hero) */
-a.btn {
-    height: auto;
-    width: auto;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Zalando Sans Expanded', sans-serif;
-    color: #eeeeee;
-    border-radius: 30px;
-    background-color: rgba(154, 154, 154, 0.212);
-    padding: 15px 20px;
-    font-size: 18px;
-    white-space: nowrap;
-    vertical-align: middle;
-    text-align: center;
-    margin: 10px;
-}
-
-a.btn:hover {
-    transform: translateY(-3px);
-    transition: 0.2s;
-}
-
-a.btn span {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px;
-}
-
-a.btn img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 30px;
-    height: 30px;
-}
-
-a.btn-port img {
-    rotate: -45deg;
-}
-
-.hero-content a.btn-port {
-    border: 1px solid #AD0485;
-    background: rgba(26, 26, 26, 0.34);
-    backdrop-filter: blur(23.5px);
-}
-
-
-
-a.btn-contato img {
-    margin-left: 15px;
-}
-
-a.btn:hover {
-    background-color: rgba(154, 154, 154, 0.312);
-    transition: 0.2s;
-}
-
-.hero a.btn-port:hover {
-    background: rgba(0, 0, 0, 0.255);
-}
-
-button.button img {
-    width: 30px;
-}
-
 /* MAIN */
 
 /* SOBRE */
@@ -392,6 +393,10 @@ button.button img {
 .sobre-txt-cima {
     word-break: keep-all;
     max-width: 54%;
+}
+
+.sobre-txt-cima img {
+    width: 50px;
 }
 
 .sobre-txt-baixo {
@@ -700,13 +705,13 @@ section.contato {
 
 .redes-link ul li a:hover {
     transform: translateY(-3px);
-
 }
+
 
 a.contato-btn {
 
-        background-color: rgba(154, 154, 154, 0.212);
-        backdrop-filter: blur(10px);
+    background-color: rgba(154, 154, 154, 0.212);
+    backdrop-filter: blur(10px);
 
 
     width: auto;
@@ -829,6 +834,8 @@ a.contato-btn {
         font-size: 16px;
         padding: 14px 18px;
     }
+
+
 
     /* SOBRE */
     .sobre {
