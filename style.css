@@ -466,6 +466,7 @@ section.projetos {
 }
 
 .servicos-fundo {
+        background: url('assets/img/background3.webp');
     margin: 0;
     padding: 0;
 }
@@ -476,7 +477,7 @@ div.servicos-titulo {
 }
 
 div.pin-section {
-    background: url('assets/img/background3.webp');
+
     margin: auto;
     padding: 0;
     width: 98%;
@@ -834,6 +835,9 @@ a.contato-btn {
     }
 
     .sobre-fundo {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
         gap: 30px;
     }
 
@@ -876,6 +880,12 @@ a.contato-btn {
     .servicos {
         height: 100dvh;
         padding: 0 5px;
+    }
+
+    .servicos-fundo{
+                background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 
     div.servicos-titulo {
