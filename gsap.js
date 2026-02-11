@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       scrollTrigger: {
         trigger: ".div-pai",
         start: "top top",
-        end: "+=" + listItems.length * 70 + "%",
+        end: "+=" + listItems.length * 60 + "%",
         pin: true,
         scrub: 0.2
       }
