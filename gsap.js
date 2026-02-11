@@ -11,6 +11,7 @@ window.addEventListener('load', () => {
 // Menu Mobile/Hamburguer
 document.addEventListener('DOMContentLoaded', () => {
   const hamburguer = document.querySelector('.hamburguer');
+  const logo = document.querySelector('.logo a')
   const navMenu = document.getElementById('navMenu');
   let menuOpen = false;
   let a = document.getElementById('a-menu')
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       menuOpen = !menuOpen;
       hamburguer.classList.toggle('active');
-
+      logo.style.color = '#1a1a1a';
       if (menuOpen) {
         gsap.to(navMenu, {
           right: 0,
