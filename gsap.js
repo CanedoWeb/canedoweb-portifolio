@@ -246,13 +246,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const tl = gsap.timeline();
     tl.to(".hero-fundo", { opacity: 1, duration: 0.6 })
       .to(".header", { opacity: 1, duration: 0.6, ease: "power3.out" }, ">")
-      .from(splitLogo.chars, {
-        opacity: 0,
-        y: -20,
-        duration: 0.5,
-        stagger: 0.03,
-        ease: "power2.out"
-      }, "<")
       .to(".heroH1", { y: 0, scale: 1, opacity: 1, duration: 0.7, ease: "power3.inOut" })
       .to(".heroP, .hero-btn", { opacity: 1, y: 0, duration: 0.5, ease: "power3.inOut", stagger: 0.08 }, "-=0.3");
 
