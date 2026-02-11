@@ -771,8 +771,7 @@ a.contato-btn {
 
     /* HEADER */
     header {
-        min-height: 100svh;
-        ;
+        min-height: 100svh;;
     }
 
     div.header {
