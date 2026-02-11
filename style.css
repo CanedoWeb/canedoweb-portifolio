@@ -466,7 +466,7 @@ section.projetos {
 }
 
 .servicos-fundo {
-        background: url('assets/img/background3.webp');
+    background: url('assets/img/background3.webp');
     margin: 0;
     padding: 0;
 }
@@ -704,6 +704,11 @@ section.contato {
 }
 
 a.contato-btn {
+
+        background-color: rgba(154, 154, 154, 0.212);
+        backdrop-filter: blur(10px);
+
+
     width: auto;
     padding: 20px 20px;
     display: flex;
@@ -882,8 +887,8 @@ a.contato-btn {
         padding: 0 5px;
     }
 
-    .servicos-fundo{
-                background-size: cover;
+    .servicos-fundo {
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
@@ -997,5 +1002,6 @@ a.contato-btn {
     .contato-botoes ul li a {
         flex-wrap: wrap;
     }
+
 
 }
