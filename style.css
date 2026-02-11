@@ -940,6 +940,10 @@ a.contato-btn {
         justify-content: center;
     }
 
+    .content ul li span {
+        font-size: 28px;
+    }
+
     .content .fill {
         display: none;
     }
