@@ -775,7 +775,9 @@ a.contato-btn {
     }
 
     /* HEADER */
-
+    header{
+        border: 2px solid green;
+    }
 
     div.header {
         border: 1px blue solid;
