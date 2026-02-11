@@ -105,10 +105,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     tl.to(".hero-fundo", { opacity: 1, duration: 0.6 })
       .to(".header", { opacity: 1, duration: 0.6, ease: "power3.out" }, "-=0.3")
       .from(splitLogo.chars, {
-        opacity: 1,
-        y: 0,
+        opacity: 0,
+        y: -20,
         duration: 0.5,
-        stagger: 0.02,
+        stagger: 0.03,
         ease: "power2.out"
       }, "<")
       .to(".heroH1", { y: 0, scale: 1, opacity: 1, duration: 0.7, ease: "power3.inOut" })
