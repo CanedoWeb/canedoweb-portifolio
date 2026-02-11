@@ -99,17 +99,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const tl = gsap.timeline();
 
-    tl.fromTo(".hero-fundo", { opacity: 0 }, { opacity: 1, duration: 0.8 })
-      .from(".header", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<")
+    tl.fromTo(".hero-fundo", { opacity: 0.5 }, { opacity: 1, duration: 0.6 })
+      .from(".header", { opacity: 0.5, duration: 0.6, ease: "power3.out" }, "-=0.3")
       .from(splitLogo.chars, {
         opacity: 0,
-        y: -20,
-        duration: 0.7,
-        stagger: 0.03,
+        y: -10,
+        duration: 0.5,
+        stagger: 0.02,
         ease: "power2.out"
       }, "<")
-      .from(".heroH1", { y: -400, scale: 8, opacity: 0, duration: 1, ease: "power4.inOut" }, "-=0.5")
-      .from(".heroP, .hero-btn", { opacity: 0, duration: 0.8, ease: "power4.inOut" }, "<")
+      .from(".heroH1", { y: -80, scale: 8, opacity: 0, duration: 0.7, ease: "power3.inOut" })
+      .from(".heroP, .hero-btn", { opacity: 0, y: 10, duration: 0.5, ease: "power3.inOut", stagger: 0.08 }, "-=0.3");
+
+
 
     // SECTION SOBRE
 
