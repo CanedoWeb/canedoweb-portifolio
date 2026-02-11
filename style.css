@@ -794,6 +794,7 @@ a.contato-btn {
     .header-dir {
         border: 2px red solid;
         width: 50%;
+        max-width: 50%;
     }
 
     .logo a {
