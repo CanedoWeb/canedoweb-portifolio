@@ -776,11 +776,9 @@ a.contato-btn {
 
     /* HEADER */
 
-    header {
-        min-height: 100%;;
-    }
 
     div.header {
+        min-height: 100%;
         width: 100%;
         gap: 0;
         padding: 20px 10px;
