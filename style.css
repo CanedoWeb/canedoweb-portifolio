@@ -770,9 +770,6 @@ a.contato-btn {
     }
 
     /* HEADER */    
-    .header, .header-esq, .header-dir{
-        border: red solid 2px;
-    }
 
     header {
         min-height: 100svh;;
@@ -781,7 +778,7 @@ a.contato-btn {
     div.header {
         max-width: 100vw;
         gap: 0;
-        padding: 25px 20px;
+        padding: 20px 10px;
     }
 
     .header-esq,
