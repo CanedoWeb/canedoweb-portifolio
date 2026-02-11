@@ -777,7 +777,6 @@ a.contato-btn {
     /* HEADER */
 
     div.header {
-        border: 1px blue solid;
         max-width: 100vw;
         gap: 0;
         padding: 20px 10px;
@@ -785,7 +784,6 @@ a.contato-btn {
 
     .header-esq,
     .header-dir {
-        border: 2px red solid;
         width: 50%;
         max-width: 50%;
     }
