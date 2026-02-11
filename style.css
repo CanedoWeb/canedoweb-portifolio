@@ -769,7 +769,11 @@ a.contato-btn {
         width: 30px;
     }
 
-    /* HEADER */
+    /* HEADER */    
+    .header, .header-esq, .header-dir{
+        border: red solid 2px;
+    }
+
     header {
         min-height: 100svh;;
     }
