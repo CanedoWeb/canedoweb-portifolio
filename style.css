@@ -751,10 +751,11 @@ a.contato-btn {
         font-size: 40px;
         line-height: 1.1;
     }
+
     .heroH1 {
-    opacity: 0;
-    transform: translateY(-40px) scale(2);
-}
+        opacity: 0;
+        transform: translateY(-40px) scale(2);
+    }
 
     h2 {
         font-size: 40px;
@@ -769,6 +770,10 @@ a.contato-btn {
     }
 
     /* HEADER */
+    header {
+        min-height: 100vh;
+    }
+
     div.header {
         gap: 0;
         padding: 25px 20px;
