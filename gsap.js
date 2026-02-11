@@ -261,12 +261,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         markers: false,
       }
     })
-      .from(split.words, {
-        opacity: 0.3,
-        duration: 1.2,
-        stagger: 1,
-        ease: "power2.out"
-      });
+      
 
     // SECTION PORTFOLIO
     gsap.timeline({
