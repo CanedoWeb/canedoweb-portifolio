@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         markers: false,
       }
     })
-      .from(split.chars, {
+      .from(split.words, {
         opacity: 0.3,
         duration: 1.2,
         stagger: 1,
