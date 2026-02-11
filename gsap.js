@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     tl.to(".hero-fundo", { opacity: 1, duration: 0.6 })
       .to(".header", { opacity: 1, duration: 0.6, ease: "power3.out" }, "-=0.3")
-      .to(splitLogo.chars, {
+      .from(splitLogo.chars, {
         opacity: 1,
         y: 0,
         duration: 0.5,
