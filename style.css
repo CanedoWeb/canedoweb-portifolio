@@ -80,7 +80,7 @@ header {
 }
 
 header .hero-fundo {
-    background-image: url('assets/img/discotop6.webp');
+    background-image: url('assets/img/disco.webp');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top center;
@@ -631,7 +631,7 @@ section.contato {
 }
 
 .contato .contato-fundo {
-    background-image: url('assets/img/discobot6.webp');
+    background-image: url('assets/img/disco.webp');
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -822,7 +822,7 @@ a.contato-btn {
 
     header .hero-fundo {
         background-size: cover;
-        background-image: url('assets/img/discotopmob2.webp');
+        background-image: url('assets/img/discomob.webp');
     }
 
     .txt-hero {
@@ -991,7 +991,7 @@ a.contato-btn {
 
     /* CONTATO */
     section.contato {
-        height: 100vh;
+        height: 100dvh;
     }
 
     .div-pai {
@@ -999,7 +999,7 @@ a.contato-btn {
     }
 
     .contato .contato-fundo {
-        background-image: url('assets/img/discotopmob2.webp');
+        background-image: url('assets/img/discomob.webp');
         padding: 120px 20px 16px;
         height: 100%;
     }
