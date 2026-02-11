@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       menuOpen = !menuOpen;
       hamburguer.classList.toggle('active');
-      logo.style.color = '#1a1a1a';
+      if (window.innerWidth <= 768) logo.classList.toggle('active');
+
       if (menuOpen) {
         gsap.to(navMenu, {
           right: 0,
