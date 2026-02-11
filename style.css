@@ -779,7 +779,7 @@ a.contato-btn {
 
     div.header {
         border: 1px blue solid;
-        width: 100%;
+        max-width: 100%;
         gap: 0;
         padding: 20px 10px;
     }
