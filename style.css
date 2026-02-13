@@ -143,7 +143,7 @@ div.header {
 }
 
 .logo a {
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 30px;
     font-family: 'clashR', sans-serif;
     font-weight: normal;
@@ -180,10 +180,6 @@ div.header {
 .header-dir .hamburguer.active span:nth-child(2) {
     transform: rotate(-45deg) translateY(-11px);
     background-color: #1a1a1a;
-}
-
-.logo a.active {
-    color: #1a1a1a;
 }
 
 /* Hero Section Texts */
@@ -789,6 +785,7 @@ a.contato-btn {
     }
 
     .logo a {
+        color: white;
         font-size: 20px;
     }
 
