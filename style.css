@@ -103,7 +103,7 @@ header .hero-fundo::before {
     background-repeat: no-repeat;
     background-position: top center;
     opacity: 1;
-    animation: discoPulse 3.5s ease-in-out infinite alternate;
+    animation: discoPulse 3s ease-in-out infinite alternate;
     z-index: 0;
 }
 
@@ -681,7 +681,7 @@ section.contato {
     background-repeat: no-repeat;
     background-position: top center;
     opacity: 1;
-    animation: discoPulse 3.5s ease-in-out infinite alternate;
+    animation: discoPulse 3s ease-in-out infinite alternate;
     z-index: 0;
 }
 
