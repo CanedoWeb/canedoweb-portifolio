@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fechar menu ao clicar fora dele
   document.addEventListener('click', (e) => {
-    if (!navMenu.contains(e.target) && !hamburguer.contains(e.target) && menuOpen || a.contains(e.target)) {
+    if (!navMenu.contains(e.target) && !hamburguer.contains(e.target) && menuOpen || a.contains(e.target) || hamburguer.contains(e.target)) {
       if (window.innerWidth <= 768) logo.style.color = 'white';
       menuOpen = false;
       hamburguer.classList.remove('active');
