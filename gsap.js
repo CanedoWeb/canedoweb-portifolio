@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.stopPropagation();
       menuOpen = !menuOpen;
       hamburguer.classList.toggle('active');
-      if (window.innerWidth <= 768) logo.style.color = 'black';
+      if (window.innerWidth <= 768)  logo.style.color = menuOpen ? 'black' : 'white';
 
       if (menuOpen) {
         gsap.to(navMenu, {
@@ -46,8 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Fechar menu ao clicar fora dele
   document.addEventListener('click', (e) => {
-    if (!navMenu.contains(e.target) && !hamburguer.contains(e.target) && menuOpen || a.contains(e.target) || hamburguer.contains(e.target)) {
-      if (window.innerWidth <= 768) logo.style.color = 'white';
+    if (!navMenu.contains(e.target) && !hamburguer.contains(e.target) && menuOpen) {
       menuOpen = false;
       hamburguer.classList.remove('active');
       
@@ -99,10 +98,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
   mm.add("(min-width: 769px)", () => {
 
     splitH2ScrollAnimation()
+
     gsap.utils.toArray(".btn").forEach((btn) => {
       btn.addEventListener("mouseenter", () => gsap.to(btn, { y: -3, duration: 0.2, overwrite: "auto" }));
       btn.addEventListener("mouseleave", () => gsap.to(btn, { y: 0, duration: 0.2, overwrite: "auto" }));
     });
+
     const tl = gsap.timeline();
 
     tl.to(".hero-fundo", { opacity: 1, duration: 0.6 })
@@ -114,8 +115,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         stagger: 0.03,
         ease: "power2.out"
       }, "<")
+      .from(".img-logo", { y: 0, opacity: 0, duration: 0.7, ease: "power3.inOut" }, "<")
       .to(".heroH1", { y: 0, scale: 1, opacity: 1, duration: 0.7, ease: "power3.inOut" })
-      .to(".heroP, .hero-btn", { opacity: 1, y: 0, duration: 0.5, ease: "power3.inOut", stagger: 0.08 }, "-=0.3");
+      .to(".heroP, .hero-btn", { opacity: 1, y: 0, duration: 0.5, ease: "power3.inOut", stagger: 0.08 }, "-=0.3")
+
 
 
 
@@ -249,6 +252,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const tl = gsap.timeline();
     tl.to(".hero-fundo", { opacity: 1, duration: 0.6 })
       .to(".header", { opacity: 1, duration: 0.6, ease: "power3.out" }, ">")
+      .from(".img-logo", { y: 0, opacity: 0, duration: 0.7, ease: "power3.inOut" }, "<")
       .to(".heroH1", { y: 0, scale: 1, opacity: 1, duration: 0.7, ease: "power3.inOut" }, ">")
       .to(".heroP, .hero-btn", { opacity: 1, y: 0, duration: 0.5, ease: "power3.inOut", stagger: 0.08 }, "-=0.3");
 

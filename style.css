@@ -224,7 +224,6 @@ div.header {
 .txt-hero {
     margin-top: 17vmax;
     margin-bottom: 50px;
-    z-index: 999;
 }
 
 .txt-hero .img-logo {
@@ -246,7 +245,7 @@ div.header {
     }
 
     to {
-        transform: scale(1.1);
+        transform: scale(1.06);
     }
 }
 
@@ -915,7 +914,7 @@ a.contato-btn {
 
     .txt-hero .img-logo {
         position: absolute;
-        top: 13vh;
+        top: 11vh;
         left: 50vw;
         transform: translate(-50%);
 
