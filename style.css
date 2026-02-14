@@ -858,36 +858,38 @@ a.contato-btn {
 
     /* HERO */
     header {
-        height: 100vh;
+        height: 90vh;
     }
 
     header .hero-fundo {
-        background-size: cover;
-        background-image: url('assets/img/discomob2\ \(1\).webp');
-        background-size: 170% 80%;
+        background-image: url('assets/img/discomob2\ \(2\)\ 1.webp');
+        background-size: contain;
+                background-position: top top;
+                        background-repeat: no-repeat;
     }
 
     header .hero-fundo::before {
         content: "";
         position: absolute;
         inset: 0;
-        background-image: url('assets/img/discomob\ \(1\).webp');
+        background-image: url('assets/img/discomob\ \(2\)\ 1.webp');
         /* imagem de cima */
-        background-size: 170% 80%;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: top top;
         opacity: 1;
-        animation: discoPulse 3.5s ease-in-out infinite alternate;
+        animation: discoPulse 3s ease-in-out infinite alternate;
         z-index: 0;
     }
 
 
     .txt-hero {
+        padding-top: 10vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 60px;
-        margin-bottom: 30px;
+        justify-content: center;
+        margin: auto;
     }
 
     .hero-content {
@@ -1057,7 +1059,7 @@ a.contato-btn {
 
     .contato .contato-fundo {
         overflow: hidden;
-        background-image: url('assets/img/discomob2\ \(1\).webp');
+        background-image: url('assets/img/discomob2\ \(2\)\ 1.webp');
         background-size: 200% 100%;
         background-repeat: no-repeat;
         background-position: top top;
@@ -1071,13 +1073,13 @@ a.contato-btn {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('assets/img/discomob\ \(1\).webp');
+    background-image: url('assets/img/discomob\ \(2\)\ 1.webp');
     /* imagem de cima */
     background-size: 200% 100%;
     background-repeat: no-repeat;
     background-position: top center;
     opacity: 1;
-    animation: discoPulse 3.5s ease-in-out infinite alternate;
+    animation: discoPulse 3s ease-in-out infinite alternate;
     z-index: 0;
 }
 
