@@ -329,6 +329,10 @@ button.button img {
     width: 30px;
 }
 
+.btn-contato img{
+    rotate: 90deg;
+}
+
 /* Menu Slide da Direita */
 .nav-menu {
     backdrop-filter: blur(50px);
@@ -453,7 +457,7 @@ button.button img {
 
 .sobre-txt-cima {
     word-break: keep-all;
-    max-width: 54%;
+    max-width: 60%;
 }
 
 .sobre-txt-cima img {
@@ -461,7 +465,7 @@ button.button img {
 }
 
 .sobre-txt-baixo {
-    max-width: 50%;
+    max-width: 60%;
     text-align: right;
     word-break: keep-all;
 }
@@ -809,7 +813,11 @@ a.contato-btn {
 }
 
 .contato-botoes ul li a.contato-first img {
-    transform: rotate(-45deg);
+    transform: rotate(-135deg);
+}
+
+.contato-botoes .zap img{
+    rotate: 0deg;
 }
 
 .contato a.contato-first:hover {
