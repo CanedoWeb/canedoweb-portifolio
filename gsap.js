@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         start: "top top",
         end: "+=" + listItems.length * 80 + "%",
         pin: true,
-        scrub: true
+        scrub: 2
       }
     });
 
