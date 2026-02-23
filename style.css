@@ -131,6 +131,8 @@ header .hero-fundo::before {
 .heroP,
 .hero-btn {
     opacity: 0;
+    padding: 0;
+    margin: 0;
     transform: translateY(10px);
 }
 
@@ -318,7 +320,9 @@ a.btn-port img {
 }
 
 a.btn-contato img {
-    margin-left: 15px;
+    margin-left: 5%;
+    rotate: 90deg;
+
 }
 
 .hero a.btn-port:hover {
@@ -327,10 +331,6 @@ a.btn-contato img {
 
 button.button img {
     width: 30px;
-}
-
-.btn-contato img{
-    rotate: 90deg;
 }
 
 /* Menu Slide da Direita */
@@ -354,14 +354,15 @@ button.button img {
     overflow-y: auto;
 }
 
-.nav-menu .img-logo{
+.nav-menu .img-logo {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nav-menu .img-logo img{
+
+.nav-menu .img-logo img {
     width: 50%;
 }
 
@@ -405,6 +406,11 @@ button.button img {
 
 .nav-menu ul li a img {
     color: #0f0f0f;
+
+}
+
+.especialista-nav img{
+    rotate: -45deg;
 }
 
 .menu-btn-second img {
@@ -816,7 +822,7 @@ a.contato-btn {
     transform: rotate(-135deg);
 }
 
-.contato-botoes .zap img{
+.contato-botoes .zap img {
     rotate: 0deg;
 }
 
@@ -1138,7 +1144,7 @@ a.contato-btn {
     }
 
     .contato .contato-fundo h2 {
-        font-size: 48px;
+        font-size: 36px;
         text-align: center;
     }
 
