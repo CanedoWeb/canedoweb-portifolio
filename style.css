@@ -761,7 +761,7 @@ section.contato {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 20px 40px 20px;
+    padding: 40px 20px 80px 20px;
     position: relative;
     z-index: 2;
 }
